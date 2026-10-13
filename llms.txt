@@ -1,0 +1,32 @@
+# FlatMMO Companion
+
+> Public FlatMMO-specific knowledge and deterministic grounding layer.
+
+Human companion: https://etherealaporia-alt.github.io/FlatMMO-Companion/
+Canonical AI page: https://etherealaporia-alt.github.io/FlatMMO-Companion/ai.html
+Canonical JSON context: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-context.json
+Text fallback: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-context.txt
+
+Important:
+- FlatMMO is independent. Missing facts must not be inferred from RuneScape or other games.
+- Consult the mechanics-rule status before calculations.
+- Sleep Points and Run steps are separate systems.
+- Exact combat hit chance, DPS, kill time, survivability and recommended levels remain unsupported until formulas are verified.
+- The public grounding files contain no individual player's live/private snapshot.
+
+Current domains:
+- monsters: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-monsters.json
+- quests (19 core records): https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-quests.json
+- observed quest/mechanics overrides: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-overrides.json
+- skills: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-skills.json
+- mechanics: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-mechanics.json
+- mechanics/readiness rules: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-rules.json
+- areas: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-areas.json
+- equipment: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-equipment.json
+- first-class items/acquisition graph: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-items.json
+- unified typed relationship graph: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-graph.json
+- language/colloquial interpretation lexicon: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-language.json
+- sources: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-sources.json
+- status: https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-status.json
+
+The canonical JSON context merges the two observation-backed quest placeholders into the 19 core quest records for 21 named quests and embeds 588 first-class item records with 1,168 normalized acquisition routes and 199 items with structured uses. The separate relationship graph publishes 1574 typed nodes and 7380 explicit relationships. The human v2.1 interface adds a curated interpretation-only language layer (20 English colloquial groups, 46 FlatMMO-attested terms and 7 isolated RuneScape/OSRS comparisons) above the v2.0 bounded topic threads, semantic repair and deterministic planner. Language evidence never replaces official FlatMMO names or supplies mechanics; the public knowledge facts remain source-backed.

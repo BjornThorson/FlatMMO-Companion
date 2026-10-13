@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "recordCount": 20,
+  "records": [
+    {
+      "id": "mechanic.quests",
+      "name": "Quests",
+      "summary": "Optional task chains involving NPCs, items, combat and area unlocks. The wiki reports 21 total quests.",
+      "source": "https://flatmmo.wiki/index.php/Quests"
+    },
+    {
+      "id": "mechanic.achievements",
+      "name": "Achievements",
+      "summary": "Optional challenges that can grant Sleep Points or combat damage bonuses.",
+      "source": "https://flatmmo.wiki/index.php/Achievement"
+    },
+    {
+      "id": "mechanic.coins",
+      "name": "Coins",
+      "summary": "Primary in-game currency used for shops, travel and other purchases.",
+      "source": "https://flatmmo.wiki/index.php/Coins"
+    },
+    {
+      "id": "mechanic.trading",
+      "name": "Trading",
+      "summary": "Player-to-player item exchange mechanics.",
+      "source": "https://flatmmo.wiki/index.php/Trading"
+    },
+    {
+      "id": "mechanic.sleep_points",
+      "name": "Sleep Points",
+      "summary": "Activity resource consumed by skilling/combat. Sleeping in a bed restores the player's current Sleep Point maximum; achievements can increase capacity.",
+      "source": "https://flatmmo.wiki/index.php/Sleep_Points"
+    },
+    {
+      "id": "mechanic.armour",
+      "name": "Armour",
+      "summary": "Equipment sets provide combat-style defence/damage bonuses and may have environment or set-specific effects.",
+      "source": "https://flatmmo.wiki/index.php/Armour"
+    },
+    {
+      "id": "mechanic.tools",
+      "name": "Tools",
+      "summary": "Skill tools such as pickaxes, axes and fishing equipment gate or improve gathering actions.",
+      "source": "https://flatmmo.wiki/index.php/Tools"
+    },
+    {
+      "id": "mechanic.monsters",
+      "name": "Monsters",
+      "summary": "Combat enemies with HP, damage, accuracy, defences, weaknesses and drop tables.",
+      "source": "https://flatmmo.wiki/index.php/Monsters"
+    },
+    {
+      "id": "mechanic.fermenting",
+      "name": "Fermenting",
+      "summary": "Brewing-related time/process mechanic for fermented products.",
+      "source": "https://flatmmo.wiki/index.php/Fermenting"
+    },
+    {
+      "id": "mechanic.treasure_maps",
+      "name": "Treasure Maps",
+      "summary": "Treasure-map/chest system with rewards including coins, resources, rings and rare equipment.",
+      "source": "https://flatmmo.wiki/index.php/Treasure_Maps"
+    },
+    {
+      "id": "mechanic.bundles",
+      "name": "Bundles",
+      "summary": "Collection/completion mechanic requiring sets of items or objectives.",
+      "source": "https://flatmmo.wiki/index.php/Bundles",
+      "status": "page-retrieval-partial"
+    },
+    {
+      "id": "mechanic.sigils",
+      "name": "Sigils",
+      "summary": "Equipable/collectible sigil mechanic with special effects.",
+      "source": "https://flatmmo.wiki/index.php/Sigils"
+    },
+    {
+      "id": "mechanic.shops",
+      "name": "Shops",
+      "summary": "NPC shops across regions sell skill supplies, equipment and other goods.",
+      "source": "https://flatmmo.wiki/index.php/Shops"
+    },
+    {
+      "id": "mechanic.pets",
+      "name": "Pets",
+      "summary": "Collectible pet system tied to activities and drops.",
+      "source": "https://flatmmo.wiki/index.php/Pets"
+    },
+    {
+      "id": "mechanic.hardcore",
+      "name": "Hardcore",
+      "summary": "Alternative account/game mode with additional restrictions and rules.",
+      "source": "https://flatmmo.wiki/index.php/Hardcore"
+    },
+    {
+      "id": "mechanic.minigames",
+      "name": "Minigames",
+      "summary": "Side activities with their own objectives, rewards and progression.",
+      "source": "https://flatmmo.wiki/index.php/Minigames"
+    },
+    {
+      "id": "mechanic.levels",
+      "name": "Levels",
+      "summary": "Skill-level progression and XP thresholds.",
+      "source": "https://flatmmo.wiki/index.php/Levels"
+    },
+    {
+      "id": "mechanic.gems",
+      "name": "Gems",
+      "summary": "Gem items and related powers/crafting/enchantment uses.",
+      "source": "https://flatmmo.wiki/index.php/Gems",
+      "status": "older-crawl"
+    },
+    {
+      "id": "mechanic.spirits",
+      "name": "Spirits",
+      "summary": "Spirit-related activities/rewards.",
+      "source": "https://flatmmo.wiki/index.php/Spirits"
+    },
+    {
+      "id": "mechanic.archeology",
+      "name": "Archeology",
+      "summary": "Archeology-related activity/content.",
+      "source": "https://flatmmo.wiki/index.php/Archeology"
+    }
+  ]
+}

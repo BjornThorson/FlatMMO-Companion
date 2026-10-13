@@ -1,0 +1,2169 @@
+{
+  "schemaVersion": 3,
+  "reportedTotal": 21,
+  "recordCount": 19,
+  "records": [
+    {
+      "id": "quest.lost_cat",
+      "name": "Lost Cat",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook"
+      ],
+      "requirements": [
+        "1 Milk Bucket"
+      ],
+      "rewards": [
+        "10 Coins"
+      ],
+      "procedure": [
+        "Speak to the Crying Lady in Everbrook.",
+        "Find the cat north of the Mayor's House.",
+        "Have a Milk Bucket to lure it back.",
+        "Return the cat to the Crying Lady."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Crying Lady in Everbrook.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cemetery"
+          ],
+          "npcIds": [
+            "everbrook.crying_girl"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Find the cat north of the Mayor's House.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "The cat is described relative to Mayor's House, but the exact adjacent room is not modeled."
+        },
+        {
+          "step": 3,
+          "text": "Have a Milk Bucket to lure it back.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial"
+        },
+        {
+          "step": 4,
+          "text": "Return the cat to the Crying Lady.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cemetery"
+          ],
+          "npcIds": [
+            "everbrook.crying_girl"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 4,
+        "roomLinkedSteps": 2,
+        "npcLinkedSteps": 2,
+        "areaOnlySteps": 2
+      }
+    },
+    {
+      "id": "quest.drain_key",
+      "name": "Drain Key",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook",
+        "Sewer"
+      ],
+      "requirements": [
+        "1 Water Bucket"
+      ],
+      "rewards": [
+        "25 Milk Buckets",
+        "Raw Steak"
+      ],
+      "procedure": [
+        "Speak to Mary at the Cow Pen.",
+        "Pour a Water Bucket down the drain and collect the key from the mini-sewer.",
+        "Speak to Bob the Farmer after Mary says it is the wrong key.",
+        "Take the rusty key to the Sewer's Silkfang area and use the acid puddle.",
+        "Return the cleaned key to Mary."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to Mary at the Cow Pen.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Mary/Cow Pen is not a distinct structured room in v1.2."
+        },
+        {
+          "step": 2,
+          "text": "Pour a Water Bucket down the drain and collect the key from the mini-sewer.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.mini_sewer"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Speak to Bob the Farmer after Mary says it is the wrong key.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cow_farm"
+          ],
+          "npcIds": [
+            "everbrook.bob_farmer"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "Take the rusty key to the Sewer's Silkfang area and use the acid puddle.",
+          "areaIds": [
+            "area.sewer"
+          ],
+          "roomIds": [
+            "sewer.silkfang"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.silkfang"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 5,
+          "text": "Return the cleaned key to Mary.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Mary/Cow Pen is not a distinct structured room in v1.2."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 5,
+        "areaOnlySteps": 2,
+        "roomLinkedSteps": 3,
+        "npcLinkedSteps": 1,
+        "monsterLinkedSteps": 1
+      }
+    },
+    {
+      "id": "quest.heating_homes",
+      "name": "Heating Homes",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook"
+      ],
+      "requirements": [
+        "1 Normal Log",
+        "1 Coal Ore"
+      ],
+      "rewards": [
+        "Matches",
+        "2 Coins"
+      ],
+      "procedure": [
+        "Speak to Minty in the starting-area house.",
+        "Put 1 Normal Log and 1 Coal Ore into the fireplace."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to Minty in the starting-area house.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Starting-area house is not modeled as a separate room."
+        },
+        {
+          "step": 2,
+          "text": "Put 1 Normal Log and 1 Coal Ore into the fireplace.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Fireplace is inside the starting-area house, which is not separately modeled."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 2,
+        "areaOnlySteps": 2
+      }
+    },
+    {
+      "id": "quest.chicken_slaughter",
+      "name": "Chicken Slaughter",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook"
+      ],
+      "requirements": [
+        "Kill 5 Chickens"
+      ],
+      "rewards": [
+        "3 Cooked Chicken"
+      ],
+      "procedure": [
+        "Speak to the Chicken Farmer.",
+        "Kill 5 Chickens.",
+        "Speak to the Chicken Farmer again."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Chicken Farmer.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chicken_pen"
+          ],
+          "npcIds": [
+            "everbrook.chicken_farmer"
+          ],
+          "monsterIds": [
+            "monster.chicken"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Kill 5 Chickens.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chicken_pen"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.chicken"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Speak to the Chicken Farmer again.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chicken_pen"
+          ],
+          "npcIds": [
+            "everbrook.chicken_farmer"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 3,
+        "roomLinkedSteps": 3,
+        "npcLinkedSteps": 2,
+        "monsterLinkedSteps": 2
+      }
+    },
+    {
+      "id": "quest.shrimp_sandwich",
+      "name": "Shrimp Sandwich",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook"
+      ],
+      "requirements": [
+        "Cooking 10",
+        "5 Cooked Shrimp",
+        "1 Bread"
+      ],
+      "rewards": [
+        "Chef Hat",
+        "20 Coins"
+      ],
+      "procedure": [
+        "Speak to the Chef in Everbrook.",
+        "Deliver 5 Cooked Shrimp and 1 Bread."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Chef in Everbrook.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chefs_house_inside"
+          ],
+          "npcIds": [
+            "everbrook.chef"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Deliver 5 Cooked Shrimp and 1 Bread.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chefs_house_inside"
+          ],
+          "npcIds": [
+            "everbrook.chef"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 2,
+        "roomLinkedSteps": 2,
+        "npcLinkedSteps": 2
+      }
+    },
+    {
+      "id": "quest.sewer_doll",
+      "name": "Sewer Doll",
+      "difficulty": "Easy",
+      "locations": [
+        "Everbrook",
+        "Sewer"
+      ],
+      "requirements": [
+        "Accept quest to make Sewer Doll available"
+      ],
+      "rewards": [
+        "10 Giant Bones"
+      ],
+      "procedure": [
+        "Speak to the Crying Girl in Everbrook Cemetery.",
+        "Find the doll in the Sewer pipe directly above the water.",
+        "Return it to the Crying Girl."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Crying Girl in Everbrook Cemetery.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cemetery"
+          ],
+          "npcIds": [
+            "everbrook.crying_girl"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Find the doll in the Sewer pipe directly above the water.",
+          "areaIds": [
+            "area.sewer"
+          ],
+          "roomIds": [
+            "sewer.gold_ore"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Return it to the Crying Girl.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cemetery"
+          ],
+          "npcIds": [
+            "everbrook.crying_girl"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 3,
+        "roomLinkedSteps": 3,
+        "npcLinkedSteps": 2
+      }
+    },
+    {
+      "id": "quest.let_there_be_light_2",
+      "name": "Let There Be Light 2",
+      "difficulty": "Easy",
+      "locations": [
+        "Mystic Vale",
+        "Dock Haven",
+        "Everbrook"
+      ],
+      "requirements": [
+        "1 Beanstalk Seed"
+      ],
+      "rewards": [
+        "20,000 Farming XP",
+        "20,000 Enchantment XP",
+        "Beanstalk access"
+      ],
+      "procedure": [
+        "Bring a Beanstalk Seed to Zapto in Mystic Vale.",
+        "Use the Water Shrine in Dock Haven to make it a Soaked Beanstalk Seed.",
+        "Return to Zapto.",
+        "During cloudy weather, use the soaked seed near the unusual clouds at the Everbrook Cow Farm."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Bring a Beanstalk Seed to Zapto in Mystic Vale.",
+          "areaIds": [
+            "area.mystic_vale"
+          ],
+          "roomIds": [
+            "mystic_vale.farm"
+          ],
+          "npcIds": [
+            "mystic_vale.zapto"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Use the Water Shrine in Dock Haven to make it a Soaked Beanstalk Seed.",
+          "areaIds": [
+            "area.dock_haven"
+          ],
+          "roomIds": [
+            "dock_haven.dock"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high",
+          "note": "v1.2 room model records the Water Orb altar at Dock Haven Dock."
+        },
+        {
+          "step": 3,
+          "text": "Return to Zapto.",
+          "areaIds": [
+            "area.mystic_vale"
+          ],
+          "roomIds": [
+            "mystic_vale.farm"
+          ],
+          "npcIds": [
+            "mystic_vale.zapto"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "During cloudy weather, use the soaked seed near the unusual clouds at the Everbrook Cow Farm.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.cow_farm"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 4,
+        "roomLinkedSteps": 4,
+        "npcLinkedSteps": 2
+      }
+    },
+    {
+      "id": "quest.healing_torches",
+      "name": "Healing Torches",
+      "difficulty": "Easy",
+      "locations": [
+        "Omboko"
+      ],
+      "requirements": [
+        "Crafting 5",
+        "Firemaking 30",
+        "Piece of Paper",
+        "42 Normal Logs for the initial documented route"
+      ],
+      "rewards": [
+        "Bank healing torch system"
+      ],
+      "procedure": [
+        "Speak to the Sick Ent in Omboko.",
+        "Give the Paper-Maker a Piece of Paper to learn the Wooden Heart recipe.",
+        "Craft and return a Wooden Heart.",
+        "Wait for a global bonfire tick to make the heart Sacred.",
+        "Use Matches on the spawned bank torches."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Sick Ent in Omboko.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.sick_ent"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Give the Paper-Maker a Piece of Paper to learn the Wooden Heart recipe.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.village"
+          ],
+          "npcIds": [
+            "omboko.paper_maker"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Craft and return a Wooden Heart.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.village"
+          ],
+          "npcIds": [
+            "omboko.paper_maker"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "Wait for a global bonfire tick to make the heart Sacred.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Global bonfire tick is not tied to a single room by the normalized quest text."
+        },
+        {
+          "step": 5,
+          "text": "Use Matches on the spawned bank torches.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.bank"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Omboko Bank is the local bank room in the world model; the quest text says bank torches."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 5,
+        "roomLinkedSteps": 4,
+        "npcLinkedSteps": 2,
+        "areaOnlySteps": 1
+      }
+    },
+    {
+      "id": "quest.thieves_hideout_1",
+      "name": "Thieves Hideout",
+      "difficulty": "Medium",
+      "locations": [
+        "Thieves Hideout"
+      ],
+      "requirements": [
+        "Stealing 10",
+        "Bear Head",
+        "Tiger Head"
+      ],
+      "rewards": [
+        "Access to more rooms in Thieves Hideout"
+      ],
+      "procedure": [
+        "Speak to the first Brown Thief.",
+        "Bring a Bear Head.",
+        "Bring a Tiger Head."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the first Brown Thief.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [
+            "thieves_hideout.main_room"
+          ],
+          "npcIds": [
+            "thieves_hideout.brown_thief"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Bring a Bear Head.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [
+            "thieves_hideout.main_room"
+          ],
+          "npcIds": [
+            "thieves_hideout.brown_thief"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Bring a Tiger Head.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [
+            "thieves_hideout.main_room"
+          ],
+          "npcIds": [
+            "thieves_hideout.brown_thief"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 3,
+        "roomLinkedSteps": 3,
+        "npcLinkedSteps": 3
+      }
+    },
+    {
+      "id": "quest.thieves_hideout_2",
+      "name": "Thieves Hideout 2",
+      "difficulty": "Medium",
+      "locations": [
+        "Omboko",
+        "Thieves Hideout"
+      ],
+      "requirements": [
+        "Complete Thieves Hideout",
+        "Be able to kill a Demon"
+      ],
+      "rewards": [
+        "500 Coins",
+        "Maple Bow"
+      ],
+      "procedure": [
+        "Speak to the Mini Thief in Omboko and receive his picture.",
+        "Go to the Thieves Hideout and show the picture to the Mini Thief's father guarding the artifact room.",
+        "Enter and defeat the Demon.",
+        "Take the artifact.",
+        "Return it to the Mini Thief in Omboko."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Mini Thief in Omboko and receive his picture.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.mini_thief"
+          ],
+          "npcIds": [
+            "omboko.mini_thief_npc"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Go to the Thieves Hideout and show the picture to the Mini Thief's father guarding the artifact room.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "The father's exact room is not separately identified in the current room model."
+        },
+        {
+          "step": 3,
+          "text": "Enter and defeat the Demon.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [
+            "thieves_hideout.demon"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.demon"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "Take the artifact.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [
+            "thieves_hideout.demon"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 5,
+          "text": "Return it to the Mini Thief in Omboko.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.mini_thief"
+          ],
+          "npcIds": [
+            "omboko.mini_thief_npc"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 5,
+        "roomLinkedSteps": 4,
+        "npcLinkedSteps": 2,
+        "areaOnlySteps": 1,
+        "monsterLinkedSteps": 1
+      }
+    },
+    {
+      "id": "quest.thieves_hideout_3",
+      "name": "Thieves Hideout 3",
+      "difficulty": "Medium",
+      "locations": [
+        "Thieves Hideout"
+      ],
+      "requirements": [
+        "Cooking 30",
+        "Cake",
+        "Complete Thieves Hideout 2"
+      ],
+      "rewards": [
+        "Basement access",
+        "5,000 Feathers"
+      ],
+      "procedure": [
+        "Speak to the Bully Thief on the second floor.",
+        "Bake/acquire a Cake and give it to him."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Bully Thief on the second floor.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [],
+          "npcIds": [
+            "thieves_hideout.bully_thief"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "conflict",
+          "note": "Quest procedure says second floor while the v1.2 NPC record places Bully Thief in Thief Fat Guy; preserve the conflict."
+        },
+        {
+          "step": 2,
+          "text": "Bake/acquire a Cake and give it to him.",
+          "areaIds": [
+            "area.thieves_hideout"
+          ],
+          "roomIds": [],
+          "npcIds": [
+            "thieves_hideout.bully_thief"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "conflict",
+          "note": "Turn-in is to Bully Thief; current room placement conflicts with the procedure wording."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 2,
+        "areaOnlySteps": 2,
+        "npcLinkedSteps": 2,
+        "conflictSteps": 2
+      }
+    },
+    {
+      "id": "quest.let_there_be_light",
+      "name": "Let There Be Light",
+      "difficulty": "Medium",
+      "locations": [
+        "Mystic Vale",
+        "Everbrook"
+      ],
+      "requirements": [
+        "Farming 20",
+        "500 Glass",
+        "50 Iron Bars"
+      ],
+      "rewards": [
+        "Mystic Vale Farming Plot access"
+      ],
+      "procedure": [
+        "Speak to Zapto in Mystic Vale.",
+        "Complete the mayor-approval sequence between Mystic Vale and Everbrook.",
+        "Deliver 500 Glass and 50 Iron Bars."
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to Zapto in Mystic Vale.",
+          "areaIds": [
+            "area.mystic_vale"
+          ],
+          "roomIds": [
+            "mystic_vale.farm"
+          ],
+          "npcIds": [
+            "mystic_vale.zapto"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Complete the mayor-approval sequence between Mystic Vale and Everbrook.",
+          "areaIds": [
+            "area.mystic_vale",
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "mystic_vale.mayor_house",
+            "everbrook.mayors_house"
+          ],
+          "npcIds": [
+            "mystic_vale.mayor",
+            "everbrook.mayor"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Procedure describes a mayor-approval sequence between both towns."
+        },
+        {
+          "step": 3,
+          "text": "Deliver 500 Glass and 50 Iron Bars.",
+          "areaIds": [
+            "area.mystic_vale"
+          ],
+          "roomIds": [
+            "mystic_vale.farm"
+          ],
+          "npcIds": [
+            "mystic_vale.zapto"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Structured as the likely quest hand-in point because Zapto starts the sequence; retain as medium confidence."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 3,
+        "roomLinkedSteps": 3,
+        "npcLinkedSteps": 3
+      }
+    },
+    {
+      "id": "quest.the_3_gemstones",
+      "name": "The 3 Gemstones",
+      "difficulty": "Medium",
+      "locations": [
+        "Beach",
+        "Omboko",
+        "Mystic Vale"
+      ],
+      "requirements": [
+        "Mining 40",
+        "Forging 40",
+        "Able to kill a Tiger, Red Mage and Crocodile"
+      ],
+      "rewards": [
+        "Gemstone access",
+        "Additional Mine access",
+        "3 Gemstone Fragments"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedure": [
+        "Speak to the Dwarf in the Mining Area; he asks for gemstones connected to Beach, Omboko, and Mystic Vale.",
+        "Speak to the Research Dwarf in each of the three regions, then report back to the Mining Dwarf.",
+        "Return to each Research Dwarf's room and dig as directed.",
+        "In Omboko, defeat the Tiger guarding the gemstone and obtain/mine the gemstone fragment.",
+        "In Mystic Vale, defeat the Red Mage guarding the gemstone and obtain/mine the gemstone fragment.",
+        "At the Beach, defeat the Crocodile guarding the gemstone and obtain/mine the gemstone fragment.",
+        "Return/complete the hand-in sequence with the Mining Dwarf to unlock the documented gemstone/mine rewards."
+      ],
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the Dwarf in the Mining Area; he asks for gemstones connected to Beach, Omboko, and Mystic Vale.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.mining_entrance"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "The procedure calls this the Mining Area; v1.2 models Everbrook Mining Entrance."
+        },
+        {
+          "step": 2,
+          "text": "Speak to the Research Dwarf in each of the three regions, then report back to the Mining Dwarf.",
+          "areaIds": [
+            "area.beach",
+            "area.omboko",
+            "area.mystic_vale"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "All three regions are known, but not every Research Dwarf is modeled with a verified room identity."
+        },
+        {
+          "step": 3,
+          "text": "Return to each Research Dwarf's room and dig as directed.",
+          "areaIds": [
+            "area.beach",
+            "area.omboko",
+            "area.mystic_vale"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial"
+        },
+        {
+          "step": 4,
+          "text": "In Omboko, defeat the Tiger guarding the gemstone and obtain/mine the gemstone fragment.",
+          "areaIds": [
+            "area.omboko"
+          ],
+          "roomIds": [
+            "omboko.tigers"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.tiger"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 5,
+          "text": "In Mystic Vale, defeat the Red Mage guarding the gemstone and obtain/mine the gemstone fragment.",
+          "areaIds": [
+            "area.mystic_vale"
+          ],
+          "roomIds": [
+            "mystic_vale.red_mages"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.red_mage"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 6,
+          "text": "At the Beach, defeat the Crocodile guarding the gemstone and obtain/mine the gemstone fragment.",
+          "areaIds": [
+            "area.beach"
+          ],
+          "roomIds": [
+            "beach.boat"
+          ],
+          "npcIds": [],
+          "monsterIds": [
+            "monster.crocodile"
+          ],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 7,
+          "text": "Return/complete the hand-in sequence with the Mining Dwarf to unlock the documented gemstone/mine rewards.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.mining_entrance"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 7,
+        "roomLinkedSteps": 5,
+        "areaOnlySteps": 2,
+        "monsterLinkedSteps": 3
+      }
+    },
+    {
+      "id": "quest.saving_marin",
+      "name": "Saving Marin",
+      "difficulty": "Medium",
+      "locations": [
+        "Dock Haven",
+        "Pirate Isle"
+      ],
+      "requirements": [
+        "Mining 20",
+        "Crafting 40"
+      ],
+      "rewards": [
+        "Pirate Isle access"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "At Dock Haven, speak to the Watcher underneath the bank and accept the swim to Pirate Isle; unequip all gear before swimming.",
+        "On Pirate Isle, go south from the beach into the quicksand, speak to Marin, and agree to help.",
+        "Return to Dock Haven, take a Shovel from the bank, and give it to the Fishing Pirate in the room to the left.",
+        "Return to Pirate Isle, loot 1 Glass, then loot a Shovel one screen south.",
+        "Use the Worship Dig Anywhere ability with the shovel to get Gunpowder; combine Gunpowder and Glass into a Vial of Gunpowder.",
+        "Use the Vial of Gunpowder on the broken board east of the pirates.",
+        "Follow the quest's explosive/tunnel sequence to open the route to Marin.",
+        "Reach Marin through the tunnel and help him escape.",
+        "Return to Dock Haven; speak to the Retired Pirate and then the Watcher to finish."
+      ],
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "At Dock Haven, speak to the Watcher underneath the bank and accept the swim to Pirate Isle; unequip all gear before swimming.",
+          "areaIds": [
+            "area.dock_haven"
+          ],
+          "roomIds": [
+            "dock_haven.centre"
+          ],
+          "npcIds": [
+            "dock_haven.watcher"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Procedure says underneath the bank; v1.2 currently places Watcher in Dock Haven Centre."
+        },
+        {
+          "step": 2,
+          "text": "On Pirate Isle, go south from the beach into the quicksand, speak to Marin, and agree to help.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [
+            "pirate_isle.quicksand"
+          ],
+          "npcIds": [
+            "pirate_isle.marin"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Return to Dock Haven, take a Shovel from the bank, and give it to the Fishing Pirate in the room to the left.",
+          "areaIds": [
+            "area.dock_haven"
+          ],
+          "roomIds": [
+            "dock_haven.bank"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "The bank/shovel part is linked; the Fishing Pirate's separate room is not modeled."
+        },
+        {
+          "step": 4,
+          "text": "Return to Pirate Isle, loot 1 Glass, then loot a Shovel one screen south.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [
+            "pirate_isle.beach"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Infinite Glass is explicitly modeled on Pirate Beach; the shovel one screen south is not separately modeled."
+        },
+        {
+          "step": 5,
+          "text": "Use the Worship Dig Anywhere ability with the shovel to get Gunpowder; combine Gunpowder and Glass into a Vial of Gunpowder.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial"
+        },
+        {
+          "step": 6,
+          "text": "Use the Vial of Gunpowder on the broken board east of the pirates.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial"
+        },
+        {
+          "step": 7,
+          "text": "Follow the quest's explosive/tunnel sequence to open the route to Marin.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial"
+        },
+        {
+          "step": 8,
+          "text": "Reach Marin through the tunnel and help him escape.",
+          "areaIds": [
+            "area.pirate_isle"
+          ],
+          "roomIds": [
+            "pirate_isle.quicksand"
+          ],
+          "npcIds": [
+            "pirate_isle.marin"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium"
+        },
+        {
+          "step": 9,
+          "text": "Return to Dock Haven; speak to the Retired Pirate and then the Watcher to finish.",
+          "areaIds": [
+            "area.pirate_isle",
+            "area.dock_haven"
+          ],
+          "roomIds": [
+            "pirate_isle.ship_top",
+            "dock_haven.centre"
+          ],
+          "npcIds": [
+            "pirate_isle.retired_pirate",
+            "dock_haven.watcher"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 9,
+        "roomLinkedSteps": 6,
+        "npcLinkedSteps": 4,
+        "areaOnlySteps": 3
+      }
+    },
+    {
+      "id": "quest.volcano_bridge",
+      "name": "Volcano Bridge",
+      "difficulty": "Medium",
+      "locations": [
+        "Volcano"
+      ],
+      "requirements": [
+        "Crafting 60",
+        "Pyro Gloves",
+        "Complete Saving Marin",
+        "Complete Shrimp Sandwich",
+        "100 Cactus Planks",
+        "Nethergrass"
+      ],
+      "rewards": [
+        "Ancient Ore Node access"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "Speak to Volcanic Rocky near the lava pit in the Volcano.",
+        "Bring him a Cactus Log for testing.",
+        "Craft 100 Cactus Planks and deliver them; the test demonstrates that untreated planks burn.",
+        "Speak to the Everbrook Chef about oil coating.",
+        "Bring the Chef 100 Cactus Planks and Nethergrass from the Volcanic Rocky room so the planks can be coated.",
+        "Return to the Volcano with Pyro Gloves, equip the gloves, and build the bridge."
+      ],
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to Volcanic Rocky near the lava pit in the Volcano.",
+          "areaIds": [
+            "area.volcano"
+          ],
+          "roomIds": [
+            "volcano.bridge"
+          ],
+          "npcIds": [
+            "volcano.volcanic_rocky"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Bring him a Cactus Log for testing.",
+          "areaIds": [
+            "area.volcano"
+          ],
+          "roomIds": [
+            "volcano.bridge"
+          ],
+          "npcIds": [
+            "volcano.volcanic_rocky"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Craft 100 Cactus Planks and deliver them; the test demonstrates that untreated planks burn.",
+          "areaIds": [
+            "area.volcano"
+          ],
+          "roomIds": [
+            "volcano.bridge"
+          ],
+          "npcIds": [
+            "volcano.volcanic_rocky"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "Speak to the Everbrook Chef about oil coating.",
+          "areaIds": [
+            "area.everbrook"
+          ],
+          "roomIds": [
+            "everbrook.chefs_house_inside"
+          ],
+          "npcIds": [
+            "everbrook.chef"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 5,
+          "text": "Bring the Chef 100 Cactus Planks and Nethergrass from the Volcanic Rocky room so the planks can be coated.",
+          "areaIds": [
+            "area.everbrook",
+            "area.volcano"
+          ],
+          "roomIds": [
+            "everbrook.chefs_house_inside",
+            "volcano.bridge"
+          ],
+          "npcIds": [
+            "everbrook.chef",
+            "volcano.volcanic_rocky"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Step spans the Chef hand-in and Nethergrass source room."
+        },
+        {
+          "step": 6,
+          "text": "Return to the Volcano with Pyro Gloves, equip the gloves, and build the bridge.",
+          "areaIds": [
+            "area.volcano"
+          ],
+          "roomIds": [
+            "volcano.bridge"
+          ],
+          "npcIds": [
+            "volcano.volcanic_rocky"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 6,
+        "roomLinkedSteps": 6,
+        "npcLinkedSteps": 6
+      }
+    },
+    {
+      "id": "quest.mount_frostvale",
+      "name": "Mount Frostvale",
+      "difficulty": "Medium",
+      "locations": [
+        "Frostvale"
+      ],
+      "requirements": [
+        "Complete Desert Temple",
+        "100 Oak Logs",
+        "100 Mangrove Logs",
+        "100 Haunted Logs",
+        "1 Dragonfruit Pie of any star/quality",
+        "Warm armour recommended"
+      ],
+      "rewards": [
+        "Mount Frostvale access"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "Speak to Frostboot in Frostvale about the key to Mount Frostvale.",
+        "Speak to the Mayor for approval.",
+        "Fill the Mayor's log piles with 100 Oak Logs, 100 Mangrove Logs, and 100 Haunted Logs.",
+        "Bring the Mayor a Dragonfruit Pie of any quality.",
+        "Sign the Mayor's waiver.",
+        "Return to Frostboot, collect the key, and unlock the Mount Frostvale door."
+      ],
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to Frostboot in Frostvale about the key to Mount Frostvale.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.river"
+          ],
+          "npcIds": [
+            "frostvale.frostboot"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 2,
+          "text": "Speak to the Mayor for approval.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.mayors_house"
+          ],
+          "npcIds": [
+            "frostvale.mayor"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 3,
+          "text": "Fill the Mayor's log piles with 100 Oak Logs, 100 Mangrove Logs, and 100 Haunted Logs.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.mayors_house"
+          ],
+          "npcIds": [
+            "frostvale.mayor"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 4,
+          "text": "Bring the Mayor a Dragonfruit Pie of any quality.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.mayors_house"
+          ],
+          "npcIds": [
+            "frostvale.mayor"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 5,
+          "text": "Sign the Mayor's waiver.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.mayors_house"
+          ],
+          "npcIds": [
+            "frostvale.mayor"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        },
+        {
+          "step": 6,
+          "text": "Return to Frostboot, collect the key, and unlock the Mount Frostvale door.",
+          "areaIds": [
+            "area.frostvale"
+          ],
+          "roomIds": [
+            "frostvale.river",
+            "frostvale.northern_entrance"
+          ],
+          "npcIds": [
+            "frostvale.frostboot"
+          ],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "high"
+        }
+      ],
+      "linkCoverage": {
+        "steps": 6,
+        "roomLinkedSteps": 6,
+        "npcLinkedSteps": 6
+      }
+    },
+    {
+      "id": "quest.desert_island",
+      "name": "Desert Island",
+      "difficulty": "Medium",
+      "locations": [
+        "Desert"
+      ],
+      "requirements": [
+        "Pirate Isle access",
+        "Agility 40"
+      ],
+      "rewards": [
+        "Rusty Ring",
+        "Ability to find green maps"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "Speak to the drunken pirate in the Jafa Tavern, then speak to the Pirate Ship Captain and accept the Desert Island voyage.",
+        "On the boat, defeat the Stormy Clouds; after the boat is damaged, repair the three holes using 30 Mangrove Planks and 300 Nails.",
+        "At the island, bank all gear and inventory before swimming ashore.",
+        "Follow the island survival route: defeat a Small Cloud, descend the ladder, take the Bronze Axe, defeat a beetle and take Bait.",
+        "Cut 43 Logs for the Bow, shafts, bridge repair, and a fire.",
+        "Loot Earth Orbs and a Pickaxe; mine the required Coal/Copper; restore Worship Points.",
+        "Kill Chickens for feathers, repair the bridge, collect a Fishing Rod, and kill Spiders for String.",
+        "Loot an Unpowered Orb and fish Sardines.",
+        "Sell one Earth Orb remotely, buy Matches, light a fire, cook/eat Sardines, then obtain the Fire Orb.",
+        "Smelt a Bronze Bar, forge Bronze Arrowheads, and craft Bronze Arrows.",
+        "Defeat Splashy and craft a Damage Orb 1.",
+        "Place the required orbs in the tombs, descend the ladder, take the shovel, then return and dig by the pirate.",
+        "Loot the map and chest and return them to the Jafa bar to complete the route."
+      ],
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Speak to the drunken pirate in the Jafa Tavern, then speak to the Pirate Ship Captain and accept the Desert Island voyage.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 2,
+          "text": "On the boat, defeat the Stormy Clouds; after the boat is damaged, repair the three holes using 30 Mangrove Planks and 300 Nails.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 3,
+          "text": "At the island, bank all gear and inventory before swimming ashore.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 4,
+          "text": "Follow the island survival route: defeat a Small Cloud, descend the ladder, take the Bronze Axe, defeat a beetle and take Bait.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 5,
+          "text": "Cut 43 Logs for the Bow, shafts, bridge repair, and a fire.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 6,
+          "text": "Loot Earth Orbs and a Pickaxe; mine the required Coal/Copper; restore Worship Points.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 7,
+          "text": "Kill Chickens for feathers, repair the bridge, collect a Fishing Rod, and kill Spiders for String.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 8,
+          "text": "Loot an Unpowered Orb and fish Sardines.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 9,
+          "text": "Sell one Earth Orb remotely, buy Matches, light a fire, cook/eat Sardines, then obtain the Fire Orb.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 10,
+          "text": "Smelt a Bronze Bar, forge Bronze Arrowheads, and craft Bronze Arrows.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 11,
+          "text": "Defeat Splashy and craft a Damage Orb 1.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 12,
+          "text": "Place the required orbs in the tombs, descend the ladder, take the shovel, then return and dig by the pirate.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 13,
+          "text": "Loot the map and chest and return them to the Jafa bar to complete the route.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 13,
+        "areaOnlySteps": 13
+      }
+    },
+    {
+      "id": "quest.desert_temple",
+      "name": "Desert Temple",
+      "difficulty": "Hard",
+      "locations": [
+        "Desert"
+      ],
+      "requirements": [
+        "3,500 Coins",
+        "3 Beers (2 Normal, 1 Premium)",
+        "High combat capability (summary table)",
+        "Hunting 30 (summary table)",
+        "Stealing 40 (summary table)"
+      ],
+      "rewards": [
+        "Water supply to outpost",
+        "Train access"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "Bring 3,500 Coins and 3 Beers to the Supplier's Store west of Jafa Outpost bank.",
+        "Pay 3,000 Coins for a Water Bucket and give it to the Dehydrated Ali outside.",
+        "Follow the Cousin dialogue to the Ali at the Everbrook Well, then return to the Supplier.",
+        "Use the beers to get the Supplier drunk, ask for a Water Bucket, and obtain the Temple door key he mistakenly gives you.",
+        "Enter the Desert Temple and progress through the statue, beetle, mirror, Angry Eye, and Black Statue rooms; collect keys from the relevant chests.",
+        "In the water/fire room, use the levers to reveal the route; solve the later lever combination using the hanging-fire clue.",
+        "Solve the chest puzzle in order 2, 1, 3, 4 to obtain a key, and survive the multi-Angry-Eye section for another key.",
+        "Continue through the Black Statues and Zebeth route; locate the hidden researcher and recover the key near Zebeth's earlier position.",
+        "At the keypad door enter 1988; attempt the lever and get sent to jail.",
+        "Pick your cell lock, pick the adjacent cell, and take the dead Ali's key.",
+        "Defeat 10 Poison Alis to continue; use the pickaxe wall shortcut if useful.",
+        "Return through the researcher/water-patch route, reach the Supplier confrontation, defeat the Supplier, and pull the lever to complete the quest."
+      ],
+      "verificationNote": "Detailed walkthrough header lists 3,500 Coins and 3 Beers; the quest summary table also lists high combat, Hunting 30 and Stealing 40.",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Bring 3,500 Coins and 3 Beers to the Supplier's Store west of Jafa Outpost bank.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 2,
+          "text": "Pay 3,000 Coins for a Water Bucket and give it to the Dehydrated Ali outside.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 3,
+          "text": "Follow the Cousin dialogue to the Ali at the Everbrook Well, then return to the Supplier.",
+          "areaIds": [
+            "area.everbrook",
+            "area.desert"
+          ],
+          "roomIds": [
+            "everbrook.mining_entrance"
+          ],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "medium",
+          "note": "Step includes the Ali at the Everbrook Well; v1.2 models a well at Everbrook Mining Entrance. Desert room coverage remains partial."
+        },
+        {
+          "step": 4,
+          "text": "Use the beers to get the Supplier drunk, ask for a Water Bucket, and obtain the Temple door key he mistakenly gives you.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 5,
+          "text": "Enter the Desert Temple and progress through the statue, beetle, mirror, Angry Eye, and Black Statue rooms; collect keys from the relevant chests.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 6,
+          "text": "In the water/fire room, use the levers to reveal the route; solve the later lever combination using the hanging-fire clue.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 7,
+          "text": "Solve the chest puzzle in order 2, 1, 3, 4 to obtain a key, and survive the multi-Angry-Eye section for another key.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 8,
+          "text": "Continue through the Black Statues and Zebeth route; locate the hidden researcher and recover the key near Zebeth's earlier position.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 9,
+          "text": "At the keypad door enter 1988; attempt the lever and get sent to jail.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 10,
+          "text": "Pick your cell lock, pick the adjacent cell, and take the dead Ali's key.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 11,
+          "text": "Defeat 10 Poison Alis to continue; use the pickaxe wall shortcut if useful.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        },
+        {
+          "step": 12,
+          "text": "Return through the researcher/water-patch route, reach the Supplier confrontation, defeat the Supplier, and pull the lever to complete the quest.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert internal-room model is intentionally partial."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 12,
+        "areaOnlySteps": 11,
+        "roomLinkedSteps": 1
+      }
+    },
+    {
+      "id": "quest.desert_temple_2",
+      "name": "Desert Temple 2",
+      "difficulty": "Hard",
+      "locations": [
+        "Desert"
+      ],
+      "requirements": [
+        "Complete Desert Temple",
+        "Stealing 60",
+        "Complete Desert Bundle for waterfall/secret entrance"
+      ],
+      "rewards": [
+        "50,000 Stealing XP",
+        "1 Cactus Seed"
+      ],
+      "source": "https://flatmmo.wiki/index.php/Quests",
+      "procedureStatus": "full-normalized-from-wiki",
+      "procedure": [
+        "Complete the Desert Bundle to unlock the Waterfall Entrance.",
+        "Use the entrance and activate the lever that opens access to the researcher in the Desert Temple.",
+        "Speak to the researcher; he sends you to find a second researcher in a randomly selected Rogue Crypt.",
+        "Run Rogue Crypts until you find and speak to that researcher.",
+        "Return to the first researcher; he tells you to dig deeper in the crypt.",
+        "Go to Crypt 4 (the room with four skeletons and a plant) and dig inside it to enter the deeper room.",
+        "Dig in front of the large purple cross to trigger a fight with three Deep Rogues at the same time; defeat all three.",
+        "Use the ladder that appears, interact with the statue, and collect three prisms.",
+        "Return through the Desert Temple route and place the three prisms on the three statues.",
+        "Return to the first researcher; follow him downstairs and speak to him again to complete the quest."
+      ],
+      "verificationNote": "Detailed August 2026 walkthrough gives 50,000 Stealing XP + 1 Cactus Seed; older summary text mentions additional/uncertain rewards and is not treated as authoritative here.",
+      "procedureGraph": [
+        {
+          "step": 1,
+          "text": "Complete the Desert Bundle to unlock the Waterfall Entrance.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 2,
+          "text": "Use the entrance and activate the lever that opens access to the researcher in the Desert Temple.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 3,
+          "text": "Speak to the researcher; he sends you to find a second researcher in a randomly selected Rogue Crypt.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 4,
+          "text": "Run Rogue Crypts until you find and speak to that researcher.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 5,
+          "text": "Return to the first researcher; he tells you to dig deeper in the crypt.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 6,
+          "text": "Go to Crypt 4 (the room with four skeletons and a plant) and dig inside it to enter the deeper room.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 7,
+          "text": "Dig in front of the large purple cross to trigger a fight with three Deep Rogues at the same time; defeat all three.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 8,
+          "text": "Use the ladder that appears, interact with the statue, and collect three prisms.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 9,
+          "text": "Return through the Desert Temple route and place the three prisms on the three statues.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        },
+        {
+          "step": 10,
+          "text": "Return to the first researcher; follow him downstairs and speak to him again to complete the quest.",
+          "areaIds": [
+            "area.desert"
+          ],
+          "roomIds": [],
+          "npcIds": [],
+          "monsterIds": [],
+          "authority": "derived",
+          "confidence": "partial",
+          "note": "Desert/Rogue Crypt internal-room model is not complete in v1.2."
+        }
+      ],
+      "linkCoverage": {
+        "steps": 10,
+        "areaOnlySteps": 10
+      }
+    }
+  ],
+  "source": "https://flatmmo.wiki/index.php/Quests",
+  "status": "deep-normalized; 19 named quest records documented while page summary reports 21 total",
+  "generated": "2026-09-16",
+  "verificationNotes": [
+    "The Quests page reports 21 total quests but the documented named list in this ingestion contains 19; two are not invented.",
+    "Later quest procedures were rebuilt from the full rendered Quests page rather than summary-table rows.",
+    "Desert Temple and Desert Temple 2 contain source discrepancies between summary and detailed sections; notes are retained on those records."
+  ],
+  "relationshipPolicy": {
+    "authority": "derived",
+    "method": "Join normalized quest procedure text to already-sourced v1.2 area/room/NPC records; ambiguous steps remain area-only or conflict-marked.",
+    "rule": "Do not convert area-only or conflict-marked steps into exact room directions without new source evidence."
+  }
+}

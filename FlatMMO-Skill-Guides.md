@@ -1,0 +1,679 @@
+# FlatMMO — Practical Skill Guides
+
+These guides use the project’s existing information pool. Each starts with an action and a useful goal. They are not claimed fastest, cheapest or safest levelling routes. Coverage is strongest for production recipes and weakest for complete gathering/training schedules.
+
+Before training, check Sleep Points: the recorded rule says XP stops at zero and beds restore them. Run steps are a separate resource. Recipes describe one recorded output batch; missing requirements remain unknown.
+
+Source links identify provenance recorded in the snapshot; they were not refreshed for this guide set. Exact combat hit chance, damage rolls, DPS, kill time, survivability and generic recommended combat levels remain unresolved.
+
+## Skills
+
+[Melee](#melee) · [Archery](#archery) · [Magic](#magic) · [Health](#health) · [Hunting](#hunting) · [Worship](#worship) · [Mining](#mining) · [Forging](#forging) · [Crafting](#crafting) · [Enchantment](#enchantment) · [Fishing](#fishing) · [Farming](#farming) · [Woodcutting](#woodcutting) · [Firemaking](#firemaking) · [Cooking](#cooking) · [Brewing](#brewing) · [Stealing](#stealing) · [Agility](#agility)
+
+## Melee
+
+**Build a working melee setup before chasing a best weapon.**
+
+### Start here
+
+Equip a melee-type weapon, then deal melee damage to train. Check the weapon’s Melee requirement separately from the Forging level needed to make it. If you already own a usable weapon, you can begin planning around it without first committing to a production chain.
+
+### Choose your next step
+
+Choose your next target by purpose: a monster drop you need, a quest objective, or a recorded equipment unlock. Check that monster’s listed weakness and physical Defence. A listed weakness improves hit chance and damage, but the available formulas cannot tell us whether the fight is safe or which weapon wins overall.
+
+### A useful target
+
+Every ten Melee levels gives a recorded +1 style damage. Treat those as milestones, not a reason to promise a particular kill time. If making Iron Armour is your goal, its full set needs 125 Iron Bars; making and equipping it have different requirements.
+
+### If you get stuck
+
+If training appears stalled, check Sleep Points. If the fight is going badly, do not interpret “meets the equip requirement” as “ready for this monster”. Exact hit chance, damage rolls, DPS and survival estimates remain unknown.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.melee`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Melee)
+
+## Archery
+
+**Prepare both the weapon and its ammunition.**
+
+### Start here
+
+You need a bow and arrows to attack. Arrows are consumed, so check your supply before committing to a training session. Check the equip requirements on both components; owning a bow alone is not a complete setup.
+
+### Choose your next step
+
+Pick a monster for a documented purpose, such as a needed drop, and inspect its weakness and physical Defence. Archery uses that physical Defence field in the current rules. The data does not support assigning a safe enemy or fastest training target from your level alone.
+
+### A useful target
+
+Use recorded bow and arrow unlocks as shopping or crafting goals. Crafting can supply Archery equipment, but a Crafting requirement is not an Archery equip requirement. Every ten Archery levels adds +1 style damage.
+
+### If you get stuck
+
+If you cannot attack, check bow, arrows and equip requirements first. If XP stops, check Sleep Points. We cannot calculate arrows per kill or the ammunition needed for a level target without more combat and XP information.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.archery`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Archery)
+
+## Magic
+
+**Assemble the complete casting setup before planning training.**
+
+### Start here
+
+The recorded setup requires a staff, a Damage Orb and an Element Orb. Check all three before treating a failed attack as a level problem. Staff production and orb production are separate activities: Crafting covers staves, while Enchantment covers orbs.
+
+### Choose your next step
+
+Choose an Element Orb with the intended monster’s documented elemental weakness in mind. Magic attacks use Magic Defence, not the physical Defence field. This gives you a meaningful comparison to inspect, but not a calculated winning setup.
+
+### A useful target
+
+If supplying your own orbs, use the Enchantment guide to check base and multiple-output thresholds and shrine access. Keep Magic equip levels separate from Enchantment production levels. Every ten Magic levels adds +1 style damage.
+
+### If you get stuck
+
+Exact hit chance, damage rolls, DPS and survivability remain unresolved. Do not assume another game’s spellbook, rune costs or recipes. If XP stops while the setup is complete, check Sleep Points.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.magic`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Magic)
+
+## Health
+
+**Treat Health progression as part of your combat plan.**
+
+### Start here
+
+Health XP comes from damage dealt in combat. Choose the combat style you want to develop, assemble its required equipment, and monitor Health alongside that style. The recorded award is 2 Health XP per point of damage dealt.
+
+### Choose your next step
+
+Each Health level increases maximum HP by one. This is a concrete progression benefit, but extra maximum HP alone does not establish which monster you can survive. Enemy accuracy, damage resolution and your complete setup still matter.
+
+### A useful target
+
+Use a future Health level as an HP milestone, not as a standalone recommended combat level. The documented normal maximum is 109 HP at Health 100. If your objective is simply to improve a combat style, Health training accompanies damage dealt.
+
+### If you get stuck
+
+The normal death rule records respawning in Everbrook without item loss. Do not extend that rule to Hardcore or other restricted modes. This snapshot cannot supply a reliable safe-monster list or time-to-level calculation.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.health`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Health)
+
+## Hunting
+
+**Plan around an actual task before choosing what to fight.**
+
+### Start here
+
+The recorded training activities are hunting tasks and expeditions. Read your available task’s objective and conditions in the game, then make that objective the plan. The current pool does not identify a complete starting NPC, task board or acceptance sequence, so this guide cannot give a verified click-by-click start.
+
+### Choose your next step
+
+For a task involving a named monster, look up its location, weakness and required access, then check your combat setup. That connects Hunting to a concrete objective without assuming every monster or expedition is currently available to you.
+
+### A useful target
+
+When considering a task upgrade, inspect what it changes: selection, rewards or behaviour. Those upgrade categories are documented; a complete priced upgrade order is not. Choose based on the obstacle you are actually encountering.
+
+### If you get stuck
+
+No fastest-task ranking, exact task XP plan, complete upgrade schedule or generic safe combat level is established here. A task name and its in-game description are the most useful missing inputs for a more detailed plan.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.hunting`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Hunting)
+
+## Worship
+
+**Separate gaining Worship levels from refilling Worship Points.**
+
+### Start here
+
+Bury bones or ashes to train according to the skill record. Cemeteries refill Worship Points. If your immediate problem is an empty point supply, go to a recorded refill location rather than assuming you need another level first.
+
+### Choose your next step
+
+Everbrook Cemetery has a recorded Worship refill service. Omboko Cemetery, Ghost Mansion Cemetery and Frostvale Cemetery also have refill services in the world data. Check area access before choosing a distant refill stop.
+
+### A useful target
+
+Choose an ability you want to use—movement, teleporting or another utility action—and check its displayed level and WP cost. Point capacity increases with Worship level, but the pool does not contain a complete normalized ability-cost table or bone-XP table.
+
+### If you get stuck
+
+Do not import Prayer mechanics or bone values from another game. If you can identify the desired ability and its recorded requirement, that becomes a useful level goal; without it, an exact training quantity would be invented.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.worship`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Worship)
+
+## Mining
+
+**Mine toward a material you will actually use.**
+
+### Start here
+
+The starting tool is a Bronze Pickaxe. Before travelling, choose a recipe or item goal and identify its ore requirements. Mining consumes Sleep Points, so check that you can restore them before a long gathering session.
+
+### Choose your next step
+
+For a concrete Forging goal, one Bronze Bar requires one Copper Ore and one Coal Ore. One Iron Bar requires one Iron Ore and one Coal Ore. That makes fuel part of your gathering plan, not an optional extra. The item data can identify recorded sources, but missing ore unlock levels must be checked in game.
+
+### A useful target
+
+For ordinary ores, every two Mining levels after the ore unlock removes one mining tick; Meteor and Piles use ten-level intervals instead. Better pickaxes also provide speed buffs. Revisit a useful ore as your level improves instead of assuming the newest ore is always the best choice.
+
+### If you get stuck
+
+The current graph records Graphite at Mining 70 in the Volcano’s Graphite Room, and a Mining-50 access requirement for the Charcoal Wall in Hell. These are later targets, not beginner routes. Exact gathering rates need base ticks and tool details that are not fully normalized.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Charcoal | 50 | Hell → Layer 3.1 / Charcoal Wall |
+
+| Graphite | 70 | Volcano → Graphite Room |
+
+| Clay | Unknown | Atlas → Vortex (Under) |
+
+| Copper Ore | Unknown | Beach → Quicksand More Ores |
+
+| Gold Ore | Unknown | Beach → Quicksand Giant Spiders |
+
+| Iron Ore | Unknown | Beach → Quicksand More Ores |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.mining`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Atlas) · [Source 2](https://flatmmo.wiki/index.php/Beach) · [Source 3](https://flatmmo.wiki/index.php/Hell) · [Source 4](https://flatmmo.wiki/index.php/Mining) · [Source 5](https://flatmmo.wiki/index.php/Sewer) · [Source 6](https://flatmmo.wiki/index.php/Volcano)
+
+## Forging
+
+**Choose the finished item, then work backwards to bars and ore.**
+
+### Start here
+
+Smelt bars at a furnace and forge products at an anvil. At Forging 1, Bronze Bars use one Copper Ore plus one Coal Ore each. A Bronze Knife is also recorded at level 1 and uses five Bronze Bars. If you want one knife from raw materials, that is five Copper Ore and five Coal Ore, derived from those recipes.
+
+### Choose your next step
+
+At level 5, Iron Bar smelting becomes a recorded option: one Iron Ore plus one Coal Ore per bar. Smelting a metal does not automatically unlock every item made from that metal. Check the product’s own Forging requirement before gathering a large batch.
+
+### A useful target
+
+Full Iron Armour is a concrete project: Forging 25 to make, Melee 10 to equip, and 125 Iron Bars across its five pieces. From ore, that means 125 Iron Ore and 125 Coal Ore. Pick this goal if you want the set; it is not a proven fastest-XP route.
+
+### If you get stuck
+
+If you already own bars, skip their raw-material gathering. If you cannot make an item, check the station, product requirement, ingredients and Sleep Points. No cheapest or fastest training schedule is established by recipe XP alone.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Bronze Bar | 1 | 1 × Copper Ore, 1 × Coal Ore; output 1 |
+
+| Bronze Knife | 1 | 5 × Bronze Bar; output 1 |
+
+| Bronze Mace | 3 | 10 × Bronze Bar; output 1 |
+
+| Bronze Sword | 5 | 15 × Bronze Bar; output 1 |
+
+| Iron Bar | 5 | 1 × Iron Ore, 1 × Coal Ore; output 1 |
+
+| Bronze Body | 10 | 50 × Bronze Bar; output 1 |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.forging`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Forging)
+
+## Crafting
+
+**Pick a useful output that matches your available materials.**
+
+### Start here
+
+The recorded interface allows left-clicking a log to open recipes. Crafting covers several supply chains, including bows, staves, arrows, armour, vials and gems. Choose the chain that supports your next activity rather than gathering unrelated materials simply because a recipe is unlocked.
+
+### Choose your next step
+
+Arrow Shafts provide a concrete level-1 example: one ordinary Log produces two shafts for 5 recorded XP. Other log recipes produce different quantities. A higher-tier log recipe being craftable at level 1 does not mean you can gather that log at Woodcutting 1.
+
+### A useful target
+
+If your goal is Atlas Crown, the recorded quest requirement is Crafting 50 alongside Mining 40. Use your current level and accessible recipes to work toward that gate. The data can give per-recipe inputs; it cannot honestly choose the fastest or cheapest route without complete XP thresholds, timings and prices.
+
+### If you get stuck
+
+Before making an equipment upgrade, check its equip skill separately from its Crafting level. If materials are missing, identify the exact missing ingredient and its sources. If a recipe offers several input variants, choose one before calculating batch totals.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Arrow Shafts | 1 | 1 × Logs; output 2 |
+
+| Bonemeal | 1 | 1 × Bones; output 1 |
+
+| Bronze Arrows | 1 | 1 × Feathers, 1 × Arrow Shafts, 1 × Bronze Arrowheads; output 1 |
+
+| Bucket | 1 | 3 × Logs; output 1 |
+
+| Club | 1 | 6 × Logs; output 1 |
+
+| Fishing Net | 1 | 10 × String; output 1 |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.crafting`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Crafting)
+
+## Enchantment
+
+**Check the shrine and ingredients before chasing an orb unlock.**
+
+### Start here
+
+Damage Orb 1 is recorded at Enchantment 1: one Unpowered Orb produces one Damage Orb 1, with Mystic Vale listed as its location. Confirm shrine access as well as the level. Some shrine access depends on quests or bundles.
+
+### Choose your next step
+
+Grass Orb is recorded at level 5 with Omboko as its location; Water Orb begins at 15 and Fire Orb at 25. These are production milestones. The Magic setup still requires a staff, a Damage Orb and an Element Orb, so plan the complete setup rather than just one orb.
+
+### A useful target
+
+Multiple-output thresholds make later levels useful for existing recipes. Damage Orb 1 has base/double/triple thresholds of 1/20/40; Grass Orb has 5/20/35. Use the recorded threshold for the specific orb rather than applying a universal formula.
+
+### If you get stuck
+
+Mage armour uses Enchantment to make and Magic to equip. Higher recipes can need Stardust and other materials. Do not start a large batch until its full ingredient list and access are confirmed. A missing triple-output value remains unknown.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Damage Orb 1 | 1 | 1 × Unpowered Orb; output 1 |
+
+| Blue Mage Boots | 3 | 3 × Blue Mage Silk, 600 × Stardust, 6 × String; output 1 |
+
+| Blue Mage Gloves | 3 | 3 × Blue Mage Silk, 600 × Stardust, 6 × String; output 1 |
+
+| Blue Mage Hat | 5 | 5 × Blue Mage Silk, 1000 × Stardust, 10 × String; output 1 |
+
+| Grass Orb | 5 | 1 × Unpowered Orb; output 1 |
+
+| Red Mage Boots | 6 | 1 × Blue Mage Boots, 3 × Red Mage Silk, 1200 × Stardust, 6 × String; output 1 |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.enchantment`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Enchantment)
+
+## Fishing
+
+**Choose a fishing spot you can reach and equip for.**
+
+### Start here
+
+Fishing requires the spot’s appropriate tool and, where applicable, bait. The current records put an Anchovy spot in Everbrook Town Square, but that source row does not establish its Fishing level or required tool. Check those in game before treating it as an available starter method.
+
+### Choose your next step
+
+For a longer trip, check the destination’s access before buying supplies. The graph records Anglerfish in Omboko’s Dungeon Anglerfish room with a Fishing Rod requirement, and Eels in the Sewer and Thieves Hideout. Those locations are options to investigate, not an ordered levelling route.
+
+### A useful target
+
+Link your fishing goal to what you intend to do with the catch. If you want cooked food, check the corresponding Cooking requirement and preparation method rather than assuming catching it means you can cook it.
+
+### If you get stuck
+
+Fishing consumes Sleep Points. If XP stops, check that resource before replacing equipment. Missing fish levels, catch rates and complete tool/bait requirements prevent a supported fastest-XP or fish-per-hour guide.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Anchovy | Unknown | Everbrook → Town Square |
+
+| Anglerfish | Unknown | Omboko → Dungeon Anglerfish |
+
+| Arctic Cod | Unknown | Frostvale → Frostvale River |
+
+| Eel | Unknown | Sewer → Sewer Eels |
+
+| Lava Eel | Unknown | Hell → Layer 1 / Starting Area |
+
+| Piranha | Unknown | Omboko → Omboko Piranhas |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.fishing`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Dock_Haven) · [Source 2](https://flatmmo.wiki/index.php/Everbrook) · [Source 3](https://flatmmo.wiki/index.php/Fishing) · [Source 4](https://flatmmo.wiki/index.php/Frostvale) · [Source 5](https://flatmmo.wiki/index.php/Hell) · [Source 6](https://flatmmo.wiki/index.php/Omboko) · [Source 7](https://flatmmo.wiki/index.php/Sewer) · [Source 8](https://flatmmo.wiki/index.php/Thieves_Hideout) · [Source 9](https://flatmmo.wiki/index.php/Volcano)
+
+## Farming
+
+**Choose a crop for both its use and when you can return.**
+
+### Start here
+
+At Farming 1, the recorded crop options include Wheat and Barley with 7m 30s growth timers, and Blue, Green and Red Mushrooms with 30-minute timers. Obtain the correct seeds and check access to a plot before planning repeated harvests.
+
+### Choose your next step
+
+If your next goal is Brewing, choose ingredients for a specific potion. A level-1 Melee Potion needs Dotted Green Leaf and Red Mushroom, so growing mushrooms supplies only part of that recipe. Check the remaining ingredient’s acquisition route too.
+
+### A useful target
+
+Tree growing is a separate longer-term option: Normal Tree is recorded at Farming 5, requiring 10 bonemeal and five hours of growth. Oak Tree is level 10, 50 bonemeal and ten hours. These are recorded timers, not a proven ranking of XP efficiency.
+
+### If you get stuck
+
+The skill record lists eight plots including four Greenhouse plots; Greenhouse progression depends on Farmer Bundle and contract points. Straw Hat’s +10 effective levels apply when harvesting—do not treat them as permission to plant ten levels above your actual level.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Barley | 1 | Seed: Barley Seeds; growth 7m 30s |
+
+| Blue Mushroom | 1 | Seed: Blue Mushroom Seeds; growth 30m |
+
+| Green Mushroom | 1 | Seed: Green Mushroom Seeds; growth 30m |
+
+| Red Mushroom | 1 | Seed: Red Mushroom Seeds; growth 30m |
+
+| Wheat | 1 | Seed: Wheat Seeds; growth 7m 30s |
+
+| Rockshroom | 3 | Seed: Rockshroom Seeds; growth 30m |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.farming`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Atlas) · [Source 2](https://flatmmo.wiki/index.php/Farming)
+
+## Woodcutting
+
+**Decide whether your logs are for Crafting, Firemaking or another recorded use.**
+
+### Start here
+
+You need an axe to chop trees. Choose a tree whose requirement you meet, then keep its logs for your planned output. For example, ordinary Logs can become Arrow Shafts through a level-1 Crafting recipe; Firemaking uses logs and matches.
+
+### Choose your next step
+
+Tree tiers include normal, oak, willow and maple before later types, but the current pool does not provide a complete numeric unlock and tool table. Check the tree’s displayed requirement before treating a named world location as a training option.
+
+### A useful target
+
+Higher Woodcutting levels and better axes improve chopping speed. That supports checking tool upgrades when gathering becomes a bottleneck, but it does not establish that every higher-tier tree is faster XP. Mining’s tick formula must not be reused for Woodcutting.
+
+### If you get stuck
+
+If you want access through Omboko’s Cemetery Wall, the recorded gate is a Machete and Woodcutting 80. That is a specific later access goal. Tree locations in the reference section are recorded locations only, with access and unlock gaps left visible.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Bamboo | Unknown | Omboko → Jungle Beetles |
+
+| Haunted Tree | Unknown | Mystic Vale → Cemetery |
+
+| Magic Tree | Unknown | Mystic Vale → Cemetery |
+
+| Mangrove Tree | Unknown | Beach → Beach Boat |
+
+| Pine Tree | Unknown | Frostvale → Northern Fields |
+
+| Snowy Pine Tree | Unknown | Frostvale → Mount Frostvale |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.woodcutting`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Beach) · [Source 2](https://flatmmo.wiki/index.php/Dock_Haven) · [Source 3](https://flatmmo.wiki/index.php/Frostvale) · [Source 4](https://flatmmo.wiki/index.php/Mystic_Vale) · [Source 5](https://flatmmo.wiki/index.php/Omboko) · [Source 6](https://flatmmo.wiki/index.php/Woodcutting)
+
+## Firemaking
+
+**Build a fire for an intended use, then choose the logs.**
+
+### Start here
+
+The recorded training action is lighting logs with matches. Gather both supplies before selecting a place to light the fire. Fires can be made on many world tiles, but not teleport tiles.
+
+### Choose your next step
+
+If you are preparing ordinary food, Cooking records fires as the cooking method. If you are making pies, plan an oven instead. This distinction prevents spending supplies on a fire that does not serve the recipe you intended.
+
+### A useful target
+
+Log types have different burn times and XP. Choose a log whose displayed requirements you meet and whose burn time suits the task. The current pool lacks the complete numeric table needed to recommend a levelling order or calculate logs needed for a target level.
+
+### If you get stuck
+
+If fire creation fails, check your logs, matches and tile first, then inspect the in-game requirement and Sleep Points. Do not assume Woodcutting unlock levels are also Firemaking unlock levels.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.firemake`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Firemake)
+
+## Cooking
+
+**Choose the dish before choosing the cooking station.**
+
+### Start here
+
+Ordinary raw food is cooked on fires; pies use ovens. Start with a food recipe whose requirement and ingredients you can verify. The current pool has explicit pie recipes, but not a complete starter fish-cooking progression.
+
+### Choose your next step
+
+Apple Pie is recorded at Cooking 5 and produces one pie from 20 Apples, 10 Wheat, 10 Sugarcane and five Chicken Eggs. Before gathering, subtract ingredients you already own. For two pies, double those quantities; that is a material calculation, not an XP or profit recommendation.
+
+### A useful target
+
+Banana Pie is a recorded level-10 option, Avocado Pie level 15 and Pineapple Pie level 20. Choose a next recipe because its ingredients are accessible and its output is useful. A higher requirement does not prove better training efficiency.
+
+### If you get stuck
+
+Special potion-created fires or ovens can improve speed, but this pool does not establish a complete timing or burn-chance model. If cooking is blocked, check station type, recipe level, ingredients and Sleep Points.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Apple Pie | 5 | 20 × Apple, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+| Banana Pie | 10 | 20 × Banana, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+| Avocado Pie | 15 | 20 × Avocado, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+| Pineapple Pie | 20 | 20 × Pineapple, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+| Coconut Pie | 30 | 20 × Coconut, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+| Starfruit Pie | 35 | 20 × Starfruit, 10 × Wheat, 10 × Sugarcane, 5 × Chicken Egg; output 1 |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.cooking`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Cooking)
+
+## Brewing
+
+**Choose a potion that supports the activity you are about to do.**
+
+### Start here
+
+Melee Potion is a fully recorded level-1 example: one Vial, three Dotted Green Leaf and ten Red Mushrooms produce one potion for 75 XP. Its recorded effect is +5 Melee Damage. Make it for that purpose rather than assuming it is the best training recipe.
+
+### Choose your next step
+
+At Brewing 3, Archery Potion uses one Vial, four Dotted Green Leaf and ten Green Mushrooms. Magic Potion is recorded at level 5. Check the full recipe row before collecting supplies; the item graph contains more complete rows than some older skill summaries.
+
+### A useful target
+
+Potion duration is recorded as five minutes plus 30 seconds per Brewing level. At level 10, that gives ten minutes, derived from the rule. The duration rule does not apply to beverages. Fermenting unlocks at Brewing 10 and is a distinct process to inspect.
+
+### If you get stuck
+
+Mining and Woodcutting Potions are recorded later options, but a vague “gathering boost” label is not enough to calculate an exact time saving. Choose effects with documented relevance to your goal; profit and fastest-XP rankings remain unestablished.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Melee Potion | 1 | 1 × Vial, 3 × Dotted Green Leaf, 10 × Red Mushroom; output 1 |
+
+| Archery Potion | 3 | 1 × Vial, 4 × Dotted Green Leaf, 10 × Green Mushroom; output 1 |
+
+| Magic Potion | 5 | 1 × Vial, 5 × Dotted Green Leaf, 10 × Blue Mushroom; output 1 |
+
+| Mining Potion | 10 | 1 × Vial, 5 × Green Leaf, 10 × Rockshroom; output 1 |
+
+| Woodcutting Potion | 12 | 1 × Vial, 5 × Green Leaf, 10 × Moldshroom; output 1 |
+
+| Fishing Potion | 15 | 1 × Vial, 5 × Green Leaf, 10 × Seashroom; output 1 |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.brewing`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Brewing)
+
+## Stealing
+
+**Choose the kind of source first: pickpocket, stall or chest.**
+
+### Start here
+
+Citizen is a recorded level-1 pickpocket target in Everbrook at the Mayor’s house. The source has item-specific drops, including food, logs and seeds. This is a concrete starting target to investigate, not a claim of guaranteed success or optimal XP.
+
+### Choose your next step
+
+Farmer pickpocketing is recorded at Stealing 10 in Everbrook’s Farm. If you need Green Leaf Seeds, that target is one recorded non-combat acquisition route. Farmer also exists as a monster; make sure you are choosing the pickpocket interaction.
+
+### A useful target
+
+Choose later targets by the item you want and the access you have. Some stalls have guards; Silent Gloves bypass some guard requirements, not every possible guard or access condition. Chests can have separate access gates.
+
+### If you get stuck
+
+The unlock level is not a no-failure threshold. Recorded loot odds are not automatically the chance your stealing attempt succeeds, and they do not establish items per hour. The pool does not support a complete success-rate or fastest-training route.
+
+### Recorded examples to support the plan
+
+These are selected source rows, not a recommended training order. Blank level information is shown as unknown.
+
+| Output / target | Skill level | Inputs or location |
+
+|---|---|---|
+
+| Bread from Citizen | 1 | Everbrook → Mayor's house |
+
+| Wheat | 1 | Spawn Room |
+
+| Coins | 2 | Mining Entrance |
+
+| Coins | 3 | Entrance to Thieves Hideout |
+
+| Apple | 5 | Everbrook → Chef's house |
+
+| Iron Sword | 5 | EB General Store Basement |
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.stealing`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Stealing)
+
+## Agility
+
+**Choose a movement or Dodge milestone that solves a problem for you.**
+
+### Start here
+
+The skill records agility tracks and dodging as training activities. Dodge is available at level 1 and avoids the next attack, with a recorded base cooldown of 60 seconds. The pool does not supply a complete starting-track location and XP schedule.
+
+### Choose your next step
+
+If travel is your main frustration, Agility 20 is a clear target: unlimited running outside combat. Run is measured in steps and is separate from Sleep Points. More Run capacity is not a substitute for restoring Sleep Points when XP stops.
+
+### A useful target
+
+For combat utility, level 30 adds a second Dodge slot; level 40 allows Run during combat; level 50 adds another Dodge slot. At 60, a successful Dodge allows an attack on the next possible tick. At 70, the recorded Dodge cooldown is 40 seconds.
+
+### If you get stuck
+
+Pick the milestone that matters to you, then use an accessible training activity whose requirements you can verify. Exact level-1–19 Run-step scaling, fastest-track progression and a numerical survival benefit from Dodge are not established here.
+
+### Evidence
+
+Skill record: `flatmmo-skills.json#skill.agility`. Related recipe/source rows are preserved with JSON pointers in `flatmmo-skill-guides.json`. Numerical mechanics use `flatmmo-rules.json`; location context uses `flatmmo-areas.json`.
+
+[Source 1](https://flatmmo.wiki/index.php/Agility)

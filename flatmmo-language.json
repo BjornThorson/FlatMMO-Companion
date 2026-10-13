@@ -1,0 +1,1287 @@
+{
+  "meta": {
+    "schemaVersion": "1.1",
+    "generated": "2026-09-20",
+    "release": "conversation-kernel-v2.2",
+    "purpose": "Input-language interpretation only. This file may help understand how users speak, but it is not an authority for FlatMMO mechanics.",
+    "hardRules": [
+      "Official FlatMMO skill and entity names are canonical and may not be renamed by colloquial, genre or foreign-game language.",
+      "Language knowledge may identify a speech act, concept or likely user meaning; it may not create a FlatMMO mechanic or factual relationship.",
+      "Foreign-game comparisons are quarantined stock responses and never become aliases in the FlatMMO entity catalog.",
+      "Attested community/developer terminology is evidence of language usage, not proof of a mechanic beyond the cited FlatMMO source.",
+      "Negated or explicitly rejected entities must not outrank the user's positive subject."
+    ],
+    "genreLayerStatus": "deferred; v2.1 intentionally contains English colloquialisms, FlatMMO-attested language and quarantined RuneScape comparison responses only"
+  },
+  "englishColloquialisms": [
+    {
+      "id": "repair.reject",
+      "forms": [
+        "nah",
+        "nope",
+        "wrong thing",
+        "not that",
+        "that is wrong",
+        "that's wrong",
+        "that isn't what i meant",
+        "that's not what i meant",
+        "not what i meant"
+      ],
+      "kind": "speech_act",
+      "semantic": "reject_previous_interpretation"
+    },
+    {
+      "id": "repair.replace",
+      "forms": [
+        "i meant",
+        "i mean",
+        "actually",
+        "make that",
+        "change that to",
+        "rather",
+        "instead"
+      ],
+      "kind": "speech_act",
+      "semantic": "replace_or_correct"
+    },
+    {
+      "id": "repair.scratch",
+      "forms": [
+        "scratch that",
+        "forget that bit",
+        "ignore that",
+        "undo that",
+        "go back one"
+      ],
+      "kind": "speech_act",
+      "semantic": "undo_or_repair"
+    },
+    {
+      "id": "topic.return",
+      "forms": [
+        "back to",
+        "go back to",
+        "return to",
+        "anyway back to",
+        "back on"
+      ],
+      "kind": "speech_act",
+      "semantic": "return_to_prior_topic"
+    },
+    {
+      "id": "topic.new",
+      "forms": [
+        "new question",
+        "moving on",
+        "anyway",
+        "different question",
+        "forget it"
+      ],
+      "kind": "speech_act",
+      "semantic": "start_new_topic"
+    },
+    {
+      "id": "followup.what_about",
+      "forms": [
+        "what about",
+        "how about",
+        "and what about",
+        "what if"
+      ],
+      "kind": "speech_act",
+      "semantic": "continue_or_refine"
+    },
+    {
+      "id": "followup.and",
+      "forms": [
+        "and",
+        "then",
+        "so",
+        "same again",
+        "same thing",
+        "that one",
+        "the other one",
+        "those ones",
+        "what else"
+      ],
+      "kind": "speech_act",
+      "semantic": "continue_current_topic"
+    },
+    {
+      "id": "refine.only",
+      "forms": [
+        "only",
+        "just",
+        "nothing but",
+        "only the",
+        "just the"
+      ],
+      "kind": "modifier",
+      "semantic": "narrow_current_result"
+    },
+    {
+      "id": "refine.exclude",
+      "forms": [
+        "except",
+        "apart from",
+        "other than",
+        "besides",
+        "without",
+        "leave out",
+        "exclude"
+      ],
+      "kind": "modifier",
+      "semantic": "exclude_from_current_result"
+    },
+    {
+      "id": "answer.simple",
+      "forms": [
+        "simpler",
+        "keep it simple",
+        "in simple terms",
+        "plain english",
+        "plainly",
+        "explain it simply"
+      ],
+      "kind": "answer_style",
+      "semantic": "simplify"
+    },
+    {
+      "id": "answer.detail",
+      "forms": [
+        "more detail",
+        "explain more",
+        "expand on that",
+        "go into more detail"
+      ],
+      "kind": "answer_style",
+      "semantic": "expand"
+    },
+    {
+      "id": "answer.totals",
+      "forms": [
+        "just the totals",
+        "totals only",
+        "only the totals",
+        "just the numbers",
+        "numbers only",
+        "bottom line"
+      ],
+      "kind": "answer_style",
+      "semantic": "summary_or_totals"
+    },
+    {
+      "id": "question.location",
+      "forms": [
+        "where from",
+        "where's that",
+        "where is that",
+        "where do i find that",
+        "where do i find it",
+        "get it from where"
+      ],
+      "kind": "question_form",
+      "semantic": "location_or_source"
+    },
+    {
+      "id": "question.cost",
+      "forms": [
+        "how much",
+        "what's the price",
+        "what does it cost",
+        "price?",
+        "cost?"
+      ],
+      "kind": "question_form",
+      "semantic": "cost_or_quantity"
+    },
+    {
+      "id": "question.reason",
+      "forms": [
+        "how come",
+        "why's that",
+        "why is that",
+        "why though"
+      ],
+      "kind": "question_form",
+      "semantic": "explain_reason"
+    },
+    {
+      "id": "conditional",
+      "forms": [
+        "suppose",
+        "say i had",
+        "say i have",
+        "imagine i had",
+        "if i had",
+        "what if"
+      ],
+      "kind": "modifier",
+      "semantic": "hypothetical"
+    },
+    {
+      "id": "acknowledge",
+      "forms": [
+        "yep",
+        "yeah",
+        "right",
+        "okay",
+        "ok",
+        "got it",
+        "makes sense",
+        "fair enough",
+        "cheers",
+        "thanks",
+        "thank you"
+      ],
+      "kind": "discourse",
+      "semantic": "acknowledgement"
+    },
+    {
+      "id": "negation",
+      "forms": [
+        "no",
+        "not",
+        "don't",
+        "do not",
+        "without",
+        "none",
+        "exclude",
+        "leave out"
+      ],
+      "kind": "modifier",
+      "semantic": "negation"
+    },
+    {
+      "id": "contrast",
+      "forms": [
+        "but",
+        "though",
+        "however",
+        "except that"
+      ],
+      "kind": "discourse",
+      "semantic": "contrast"
+    },
+    {
+      "id": "approximation",
+      "forms": [
+        "about",
+        "around",
+        "roughly",
+        "approximately"
+      ],
+      "kind": "modifier",
+      "semantic": "approximation"
+    }
+  ],
+  "flatmmoTerms": [
+    {
+      "id": "skill",
+      "forms": [
+        "skill",
+        "skills"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A trainable FlatMMO progression category, such as Mining, Forging or Stealing.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "level",
+      "forms": [
+        "level",
+        "levels"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A numeric progression value within a skill. Requirements and unlocks can check skill levels.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "xp",
+      "forms": [
+        "xp",
+        "experience",
+        "experience points"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Experience points earned toward skill progression. The Companion keeps XP separate from skill level when the data does.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "requirement",
+      "forms": [
+        "requirement",
+        "requirements",
+        "requires"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A condition that must be met for an action, item, quest or location, such as a skill level or item requirement.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "equip",
+      "forms": [
+        "equip",
+        "equipped",
+        "equipment"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "To put an item into an equipment slot so its equipped properties can apply. Equip requirements are kept separate from production requirements.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "drop",
+      "forms": [
+        "drop",
+        "drops",
+        "dropped"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "An item or quantity recorded as obtainable from a monster or another explicitly documented drop source.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "loot",
+      "forms": [
+        "loot",
+        "looted",
+        "looting"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Items obtained from a source such as monsters or chests. The word describes acquisition; it does not imply an undocumented source.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "monster",
+      "forms": [
+        "monster",
+        "monsters",
+        "enemy",
+        "enemies"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A combat NPC represented by FlatMMO's monster data, with recorded stats, locations and drops where known.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "npc",
+      "forms": [
+        "npc",
+        "npcs"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A non-player character. In FlatMMO an NPC may provide dialogue, quests, shops, travel, services or Stealing interactions.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "room",
+      "forms": [
+        "room",
+        "rooms",
+        "sub-location",
+        "sub location"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "An internal named location inside a larger FlatMMO area. The Companion distinguishes rooms from their parent area when the data does.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "area",
+      "forms": [
+        "area",
+        "areas",
+        "region",
+        "regions"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A larger world location that can contain internal rooms, NPCs, monsters, services and resource nodes.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "quest",
+      "forms": [
+        "quest",
+        "quests"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A structured FlatMMO objective with recorded requirements, steps and rewards where those details are known.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "shop",
+      "forms": [
+        "shop",
+        "shops",
+        "store",
+        "stores"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "An NPC or location that sells documented items. Generic shop descriptions are not treated as complete inventories.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "pickpocket",
+      "forms": [
+        "pickpocket",
+        "pickpocketing"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A Stealing action against an NPC. FlatMMO's Stealing data records level requirements, success information and possible item drops where known.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "stall",
+      "forms": [
+        "stall",
+        "stalls"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A Stealing source that can be stolen from. Some stalls have documented guard or access conditions.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "chest",
+      "forms": [
+        "chest",
+        "chests",
+        "stealing chest",
+        "stealing chests"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A container or Stealing source that can provide items when opened or looted, depending on the specific documented chest.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "bank",
+      "forms": [
+        "bank",
+        "banked",
+        "banking"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO's item storage system. Bankless accounts are a separate account mode with special restrictions.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "global_market",
+      "forms": [
+        "global market"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO's official centralized player market. Current official updates call it the Global Market.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "grand_exchange_legacy",
+      "forms": [
+        "grand exchange"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A legacy comparison phrase used by the developer while the player market was being built. The released FlatMMO feature is called the Global Market.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "afk",
+      "forms": [
+        "afk",
+        "semi afk",
+        "semi-afk",
+        "afkable",
+        "afkability"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Away from keyboard. FlatMMO's developer and players use it for activities that need relatively little attention; it is not a guarantee that an activity is completely hands-off.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        },
+        {
+          "url": "https://www.reddit.com/r/incremental_games/comments/1to5l8m/flatmmo_what_1_year_of_updates_looks_like/"
+        },
+        {
+          "url": "https://www.reddit.com/r/PBBG/comments/1rhzapm/flatmmo_what_one_year_of_content_addition_can_do/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "qol",
+      "forms": [
+        "qol",
+        "quality of life"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Quality of life: interface or usability improvements rather than a distinct skill or combat mechanic.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "tick",
+      "forms": [
+        "tick",
+        "ticks"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A game timing step used in FlatMMO documentation and discussion. Exact action timing should come from recorded mechanics rather than assuming every action uses ticks the same way.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "skilling",
+      "forms": [
+        "skilling",
+        "skiller",
+        "skillers"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Training or focusing on skills. FlatMMO's own updates use 'skilling' and 'skillers' as player-facing shorthand.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        },
+        {
+          "url": "https://www.reddit.com/r/incremental_games/comments/1to5l8m/flatmmo_what_1_year_of_updates_looks_like/"
+        },
+        {
+          "url": "https://www.reddit.com/r/PBBG/comments/1rhzapm/flatmmo_what_one_year_of_content_addition_can_do/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "grind",
+      "forms": [
+        "grind",
+        "grinds",
+        "grindy",
+        "grinding"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Repeated play aimed at progression, levels, drops or unlocks. The developer and community use this informally; it is not a formal FlatMMO mechanic name.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://www.reddit.com/r/incremental_games/comments/1to5l8m/flatmmo_what_1_year_of_updates_looks_like/"
+        },
+        {
+          "url": "https://www.reddit.com/r/PBBG/comments/1rhzapm/flatmmo_what_one_year_of_content_addition_can_do/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "pvm",
+      "forms": [
+        "pvm",
+        "pvmer",
+        "pvmers",
+        "pvm'er",
+        "pvm'ers"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Player-versus-monster combat shorthand used in FlatMMO discussion. It is conversational vocabulary, not the name of a FlatMMO skill.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://www.reddit.com/r/incremental_games/comments/1to5l8m/flatmmo_what_1_year_of_updates_looks_like/"
+        },
+        {
+          "url": "https://www.reddit.com/r/PBBG/comments/1rhzapm/flatmmo_what_one_year_of_content_addition_can_do/"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "bis",
+      "forms": [
+        "bis",
+        "best in slot"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Best in slot: a request to identify the strongest item for a slot under some criterion. The Companion must not claim a BiS item when the required combat/performance mechanics are unresolved.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": [
+        "combat_ranking"
+      ]
+    },
+    {
+      "id": "hiscores",
+      "forms": [
+        "hiscores",
+        "high scores",
+        "highscores"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO leaderboard pages for recorded player or activity rankings.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "hardcore",
+      "forms": [
+        "hardcore"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO account mode referenced in official updates. Specific death/account rules should come from current documented data rather than another game's Hardcore rules.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "one_life",
+      "forms": [
+        "one life",
+        "1 life"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO game mode referenced in official updates. It is distinct from importing another game's permadeath rules.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "bankless",
+      "forms": [
+        "bankless"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO account type that disables normal bank use, with documented exceptions and later adjustments in official updates.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "osaat",
+      "forms": [
+        "osaat",
+        "one skill at a time"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO's 'One Skill At A Time' game mode, introduced in official updates.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "shiny",
+      "forms": [
+        "shiny",
+        "shiny monster",
+        "shiny monsters"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO monster variant referenced in official updates, associated with increased drop rolls and special drops in documented content.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "bossing",
+      "forms": [
+        "bossing",
+        "boss fight",
+        "boss fights"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Fighting bosses. FlatMMO's official updates use 'bossing' and 'boss fight' conversationally.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "maxed",
+      "forms": [
+        "maxed",
+        "max"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "Informal FlatMMO wording for reaching a current level cap or maximum relevant progression state. The exact cap depends on the skill/system.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "perk",
+      "forms": [
+        "perk",
+        "perks"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "An unlockable benefit or modifier. FlatMMO uses the term for systems such as Hunting perks and premium perks; details depend on the specific perk.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "hunting_task",
+      "forms": [
+        "hunting task",
+        "hunting tasks"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A Hunting objective/task referenced by FlatMMO's official updates. Requirements and eligible monsters should come from current Hunting data.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "expedition",
+      "forms": [
+        "expedition",
+        "expeditions",
+        "hunting expedition",
+        "hunting expeditions"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A Hunting activity referenced in official updates. The term is kept distinct from generic quests or combat encounters.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "preset",
+      "forms": [
+        "preset",
+        "presets",
+        "bank preset",
+        "bank presets"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A saved bank/equipment-related configuration referenced in FlatMMO's interface updates.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "collection_log",
+      "forms": [
+        "collection log",
+        "monster log"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO tracking interface for collected or encountered content. The specific log matters; the terms are not treated as interchangeable mechanics.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "completionist",
+      "forms": [
+        "completionist",
+        "completionist trophy",
+        "completionist trophies"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO completion tracking/trophies referenced in official updates.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "speedrun",
+      "forms": [
+        "speedrun",
+        "speedruns"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A timed completion record or challenge. Official updates reference boss and activity speedruns/hiscores.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "drop_rate",
+      "forms": [
+        "drop rate",
+        "drop chance",
+        "drop odds"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "The recorded probability of obtaining an item from a source when that probability is documented. Unknown rates remain unknown.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.wiki/index.php/Stealing"
+        },
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": [
+        "drop_probability"
+      ]
+    },
+    {
+      "id": "hit_chance",
+      "forms": [
+        "hit chance",
+        "chance to hit"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "The probability that an attack lands. The Companion only computes or quotes this where the FlatMMO mechanic is explicitly documented and supported.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": [
+        "combat_ranking"
+      ]
+    },
+    {
+      "id": "run",
+      "forms": [
+        "run",
+        "running",
+        "run energy"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "FlatMMO's movement/run system. Its documented Agility thresholds are treated independently from other games' stamina systems.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "sleep_points",
+      "forms": [
+        "sleep points",
+        "sleep point",
+        "sleep"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO resource tied to activity and XP behaviour. It is separate from Run and should not be inferred from other idle/MMO systems.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    },
+    {
+      "id": "dodge",
+      "forms": [
+        "dodge",
+        "dodging"
+      ],
+      "class": "flatmmo_attested",
+      "definition": "A FlatMMO combat/movement action referenced in Agility and boss mechanics. Exact availability and effects come from FlatMMO rules.",
+      "mechanicsAuthority": false,
+      "evidence": [
+        {
+          "url": "https://flatmmo.com/news/"
+        }
+      ],
+      "semanticActions": []
+    }
+  ],
+  "foreignComparisons": [
+    {
+      "id": "runescape_smithing_forging",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "smithing"
+      ],
+      "flatmmoTerm": "Forging",
+      "answer": "Broadly, Forging is the closest FlatMMO comparison to RuneScape Smithing: FlatMMO uses Forging to smelt bars and forge metal items. Treat it as its own skill, though—RuneScape recipes, level requirements, XP rates and unlocks do not carry over.",
+      "source": "https://flatmmo.wiki/index.php/Forging"
+    },
+    {
+      "id": "runescape_thieving_stealing",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "thieving"
+      ],
+      "flatmmoTerm": "Stealing",
+      "answer": "Stealing is the closest FlatMMO comparison to RuneScape Thieving. In FlatMMO it includes pickpocketing NPCs, stealing from stalls and looting Stealing-related chests. Do not carry over RuneScape success rates, targets, unlock levels or other mechanics.",
+      "source": "https://flatmmo.wiki/index.php/Stealing"
+    },
+    {
+      "id": "runescape_prayer_worship",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "prayer"
+      ],
+      "flatmmoTerm": "Worship",
+      "answer": "Worship is the FlatMMO system you would probably want to compare with RuneScape Prayer, but it is not a rules-equivalent skill. FlatMMO Worship has its own Worship Points, training and utility abilities, so RuneScape Prayer mechanics should not be assumed.",
+      "source": "https://flatmmo.wiki/index.php/Worship"
+    },
+    {
+      "id": "runescape_agility_agility",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "agility"
+      ],
+      "flatmmoTerm": "Agility",
+      "answer": "The skill name is the same, but FlatMMO Agility has its own rules. The Companion's documented FlatMMO effects include movement/run progression and dodge-related progression; RuneScape stamina, course, obstacle or XP assumptions do not carry over.",
+      "source": "https://flatmmo.wiki/index.php/Agility"
+    },
+    {
+      "id": "runescape_crafting_crafting",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "crafting"
+      ],
+      "flatmmoTerm": "Crafting",
+      "answer": "The broad idea is familiar, but FlatMMO Crafting is its own production skill with its own recipes, materials and requirements. The shared name is not permission to import RuneScape Crafting mechanics.",
+      "source": "https://flatmmo.wiki/index.php/Crafting"
+    },
+    {
+      "id": "runescape_farming_farming",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "farming"
+      ],
+      "flatmmoTerm": "Farming",
+      "answer": "Both games use the name Farming, but FlatMMO has its own plots, crops, trees, timers and requirements. Use the similarity only as a broad orientation; RuneScape Farming mechanics and timings do not carry over.",
+      "source": "https://flatmmo.wiki/index.php/Farming"
+    },
+    {
+      "id": "runescape_ge_global_market",
+      "foreignGame": "RuneScape",
+      "foreignAliases": [
+        "runescape",
+        "old school runescape",
+        "osrs",
+        "rs3",
+        "runescape 3"
+      ],
+      "foreignTerms": [
+        "grand exchange",
+        "ge"
+      ],
+      "flatmmoTerm": "Global Market",
+      "answer": "The closest FlatMMO equivalent is the Global Market. The developer even described the planned feature as a 'grand exchange' before release, but the released system's official FlatMMO name is Global Market. I keep that official name so RuneScape terminology does not replace FlatMMO terminology.",
+      "source": "https://flatmmo.com/news/"
+    }
+  ],
+  "foreignComparisonFallback": {
+    "games": [
+      "runescape",
+      "old school runescape",
+      "osrs",
+      "rs3",
+      "runescape 3"
+    ],
+    "answer": "There may be a useful broad comparison, but I won't import mechanics from RuneScape. FlatMMO's own skill names, requirements, recipes, timings and rules stay authoritative. Ask me about the FlatMMO system you want to compare and I'll explain the documented overlap and differences."
+  },
+  "sources": [
+    {
+      "url": "https://flatmmo.com/news/",
+      "role": "official FlatMMO update/news terminology"
+    },
+    {
+      "url": "https://flatmmo.wiki/index.php/Stealing",
+      "role": "current FlatMMO community wiki terminology for Stealing"
+    },
+    {
+      "url": "https://www.reddit.com/r/incremental_games/comments/1to5l8m/flatmmo_what_1_year_of_updates_looks_like/",
+      "role": "public FlatMMO developer/community discussion; attests AFK, skilling/grinds, PvM/raids language"
+    },
+    {
+      "url": "https://www.reddit.com/r/PBBG/comments/1rhzapm/flatmmo_what_one_year_of_content_addition_can_do/",
+      "role": "public FlatMMO developer/community discussion; attests AFK, skilling/grinds, PvM/raids language"
+    }
+  ],
+  "semanticActions": [
+    {
+      "id": "combat_ranking",
+      "forms": [
+        "bis",
+        "best in slot",
+        "best weapon",
+        "best melee weapon",
+        "strongest weapon"
+      ],
+      "operation": "combat_comparison",
+      "requires": [
+        "verified_combat_performance"
+      ],
+      "authority": "interpretation_only"
+    },
+    {
+      "id": "drop_probability",
+      "forms": [
+        "drop rate",
+        "drop chance",
+        "drop odds"
+      ],
+      "operation": "probability_comparison",
+      "modifiers": [
+        "best",
+        "highest",
+        "greatest"
+      ],
+      "authority": "interpretation_only"
+    },
+    {
+      "id": "success_threshold",
+      "forms": [
+        "stop failing",
+        "never fail",
+        "no longer fail",
+        "guaranteed success",
+        "100 percent success"
+      ],
+      "operation": "success_threshold",
+      "authority": "interpretation_only"
+    }
+  ]
+}

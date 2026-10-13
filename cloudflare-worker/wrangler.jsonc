@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "flatmmo-ai-prototype",
+  "main": "SRC/entry.js",
+  "compatibility_date": "2026-09-21",
+  "ai": {
+    "binding": "AI"
+  },
+  "ratelimits": [
+    {
+      "name": "PUBLIC_CLIENT_RATE_LIMITER",
+      "namespace_id": "2026092101",
+      "simple": {
+        "limit": 12,
+        "period": 60
+      }
+    },
+    {
+      "name": "PUBLIC_IP_RATE_LIMITER",
+      "namespace_id": "2026092102",
+      "simple": {
+        "limit": 120,
+        "period": 60
+      }
+    }
+  ],
+  "vars": {
+    "MODEL": "@cf/zai-org/glm-4.7-flash",
+    "DATA_BASE": "https://etherealaporia-alt.github.io/FlatMMO-Companion/"
+  }
+}

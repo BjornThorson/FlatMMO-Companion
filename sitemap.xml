@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/ai/</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/ai/flatmmo-context.json</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/ai/flatmmo-context.txt</loc>
-    <lastmod>2026-09-15</lastmod>
-  </url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/ai.html</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-context.json</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-context.txt</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-rules.json</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-overrides.json</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-status.json</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-monsters.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-quests.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-skills.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-mechanics.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-areas.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-equipment.json</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-sources.json</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-items.json</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-graph.json</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://etherealaporia-alt.github.io/FlatMMO-Companion/flatmmo-language.json</loc><lastmod>2026-09-20</lastmod></url>
 </urlset>

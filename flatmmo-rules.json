@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-09-19",
+  "release": "player-resilience-manual-v1.6",
+  "purpose": "Calculation-readiness and deterministic-assistant rules. Facts may be official/wiki-sourced, directly observed, derived, partial, or unknown.",
+  "authorityOrder": [
+    "official",
+    "community_verified",
+    "observed",
+    "derived",
+    "partial",
+    "unknown"
+  ],
+  "rules": [
+    {
+      "id": "combat.defence",
+      "name": "Combat defence routing",
+      "status": "verified_rule",
+      "facts": [
+        "Monster Defence reduces incoming physical damage from Melee and Archery attacks.",
+        "Monster Magic Defence reduces incoming damage from Magic attacks.",
+        "There is no separate monster Archery Defence field in the current monster model."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Monsters",
+        "https://flatmmo.wiki/index.php/Armour"
+      ],
+      "notes": [
+        "Player equipment may describe bonuses in style-specific wording, but monster records use Defence and Magic Defence."
+      ]
+    },
+    {
+      "id": "combat.weakness",
+      "name": "Monster weaknesses",
+      "status": "verified_rule",
+      "facts": [
+        "Attacking a monster with its listed weakness increases the player's hit chance and damage.",
+        "A monster with no listed weakness takes normal damage from all sources."
+      ],
+      "unknowns": [
+        "Exact hit-chance bonus from weakness is not yet established in the Companion mechanics model.",
+        "The complete numerical damage modifier for every weakness subtype is not yet normalized."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Monsters"
+      ]
+    },
+    {
+      "id": "combat.progression",
+      "name": "Combat skill progression",
+      "status": "verified_rule",
+      "facts": [
+        "Melee, Archery and Magic grant 8 skill XP per point of damage dealt.",
+        "Each of Melee, Archery and Magic gains +1 style damage per 10 skill levels."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Melee",
+        "https://flatmmo.wiki/index.php/Archery",
+        "https://flatmmo.wiki/index.php/Magic"
+      ]
+    },
+    {
+      "id": "combat.formulas",
+      "name": "Combat numerical formulas",
+      "status": "partial",
+      "known": [
+        "Monster records expose HP, Damage, Accuracy, Defence, Magic Defence and Weakness.",
+        "Player state visible through FlatStats includes current/max HP, Accuracy, style damage, Defence, Magic Defence and equipped items."
+      ],
+      "unknowns": [
+        "Exact player hit-chance formula.",
+        "Exact enemy hit-chance formula.",
+        "Exact damage roll/resolution formula.",
+        "A defensible generic recommended combat-level formula."
+      ],
+      "policy": "Do not invent exact hit chance, DPS, kill time, survivability, or recommended combat level until the required formulas are verified."
+    },
+    {
+      "id": "health.core",
+      "name": "Health and death",
+      "status": "verified_rule",
+      "facts": [
+        "A fresh account has been directly observed at 10/10 HP.",
+        "Health increases maximum HP by 1 per Health level.",
+        "The documented normal maximum is 109 HP at Health level 100.",
+        "Normal death respawns the player in Everbrook without item loss."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Health",
+        "https://flatmmo.wiki/index.php/New_Player_Guide"
+      ],
+      "observations": [
+        {
+          "date": "2026-09-19",
+          "fact": "Fresh account screenshot showed 10/10 HP.",
+          "authority": "observed"
+        }
+      ]
+    },
+    {
+      "id": "agility.run",
+      "name": "Run",
+      "status": "partial",
+      "facts": [
+        "Run is an Agility active ability measured in steps.",
+        "Higher Agility increases maximum Run steps before level 20.",
+        "At Agility level 20, running is unlimited outside combat.",
+        "At Agility level 40, running is allowed during combat."
+      ],
+      "observations": [
+        {
+          "date": "2026-09-19",
+          "fact": "Fresh low-level account screenshot showed Run at 200/200 steps.",
+          "authority": "observed"
+        },
+        {
+          "date": "2026-09-19",
+          "fact": "User's Agility-20 account confirms unlimited running outside combat and that combat still cancels Run.",
+          "authority": "observed"
+        }
+      ],
+      "unknowns": [
+        "Exact maximum-step progression/formula for Agility levels 1-19 is pending direct observations."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Agility"
+      ]
+    },
+    {
+      "id": "agility.dodge",
+      "name": "Dodge",
+      "status": "verified_rule",
+      "facts": [
+        "Dodge is available from Agility level 1 and avoids the next attack.",
+        "Base Dodge cooldown is 60 seconds.",
+        "Agility level 30 unlocks a second Dodge slot.",
+        "Agility level 40 allows Run during combat.",
+        "Agility level 50 unlocks another Dodge slot.",
+        "At level 60, a successful Dodge makes the player attack on the next possible tick.",
+        "At level 70, Dodge cooldown is reduced to 40 seconds."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Agility"
+      ]
+    },
+    {
+      "id": "sleep.core",
+      "name": "Sleep Points",
+      "status": "partial",
+      "facts": [
+        "Sleep Points are separate from Run steps.",
+        "Achievements can increase maximum Sleep Points.",
+        "Beds restore Sleep Points.",
+        "Many actions consume one Sleep Point.",
+        "When Sleep Points reach zero, XP gain stops."
+      ],
+      "observations": [
+        {
+          "date": "2026-09-19",
+          "fact": "Fresh account screenshot showed the Zzz resource at 25/25.",
+          "authority": "observed"
+        },
+        {
+          "date": "2026-09-19",
+          "fact": "Production skills appear unavailable at 0 Sleep Points.",
+          "authority": "observed",
+          "confidence": "partial"
+        }
+      ],
+      "unknowns": [
+        "Whether every action consumes exactly 1 Sleep Point.",
+        "Exact 0-Sleep behaviour for each skill/activity category.",
+        "Current true maximum Sleep Point capacity; wiki totals have shown internal inconsistencies."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Sleep_Points",
+        "https://flatmmo.wiki/index.php/Achievement"
+      ]
+    },
+    {
+      "id": "achievements.sleep_damage",
+      "name": "Achievement rewards",
+      "status": "verified_rule_with_source_conflict",
+      "facts": [
+        "Achievements can award Sleep Points or permanent combat damage bonuses.",
+        "Achievement tiers use increasing Sleep Point or damage rewards."
+      ],
+      "unknowns": [
+        "The current wiki Achievement page contains inconsistent total counts/totals, so aggregate maximum Sleep Point calculations should not be treated as locked."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Achievement"
+      ]
+    },
+    {
+      "id": "mining.speed",
+      "name": "Mining speed",
+      "status": "verified_rule",
+      "facts": [
+        "Every 2 Mining levels after an ore unlock reduces the ticks required to mine it by 1.",
+        "Meteor and Piles use 10-level intervals instead.",
+        "Better pickaxes provide speed buffs."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Mining"
+      ]
+    },
+    {
+      "id": "woodcutting.speed",
+      "name": "Woodcutting speed",
+      "status": "verified_rule",
+      "facts": [
+        "Higher Woodcutting levels and better axes improve chopping speed.",
+        "The current knowledge model should use explicit tree/tool data where available instead of assuming Mining's formula applies."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Woodcutting"
+      ]
+    },
+    {
+      "id": "worship.core",
+      "name": "Worship Points and abilities",
+      "status": "verified_rule",
+      "facts": [
+        "Worship Points begin at 1 and capacity increases by 1 per Worship level.",
+        "Cemeteries refill Worship Points.",
+        "Worship abilities have explicit level and WP costs."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Worship"
+      ]
+    }
+  ],
+  "calculationReadiness": {
+    "safeNow": [
+      "recipe material totals already represented in structured equipment data",
+      "equip/craft level requirement checks",
+      "drop-source lookup",
+      "monster stat comparison",
+      "room/location lookup",
+      "quest requirement/procedure lookup",
+      "known deterministic progression rules"
+    ],
+    "blockedPendingMechanics": [
+      "exact combat hit chance",
+      "exact combat DPS/kill time",
+      "exact survivability estimates",
+      "generic recommended combat levels"
+    ],
+    "pendingUserObservation": [
+      "Agility level 1-19 maximum Run steps",
+      "Sleep Point costs and zero-Sleep behaviour by activity type"
+    ],
+    "pendingPlayerApi": [
+      "automatic player skills/XP",
+      "automatic equipped gear",
+      "automatic inventory quantities",
+      "automatic bank quantities",
+      "automatic quest completion",
+      "other player snapshot fields exposed by the official API"
+    ]
+  },
+  "playerApiContract": {
+    "status": "interim_public_profile_or_user_entered_skills_plus_reserved_official_api_adapter",
+    "principle": "The UI normalizes all player sources into one snapshot shape. v1.5 first tries to read the official public FlatMMO profile page directly from the browser; if browser cross-origin rules block that request, it fails cleanly. The eventual official API replaces only the provider adapter.",
+    "normalizedSnapshot": {
+      "username": null,
+      "updatedAt": null,
+      "skills": {},
+      "combat": {
+        "hpCurrent": null,
+        "hpMax": null,
+        "accuracy": null,
+        "meleeDamage": null,
+        "archeryDamage": null,
+        "magicDamage": null,
+        "defence": null,
+        "magicDefence": null
+      },
+      "equipment": {},
+      "inventory": {},
+      "bank": {},
+      "quests": {},
+      "collections": {},
+      "achievements": {},
+      "minigames": {}
+    },
+    "interimProvider": {
+      "name": "official_public_profile_html",
+      "urlPattern": "https://flatmmo.com/profile/?user={username}",
+      "fieldsTargeted": [
+        "username",
+        "total level/xp",
+        "skill levels/xp"
+      ],
+      "limitations": [
+        "Direct browser fetch depends on flatmmo.com allowing cross-origin reads from the Companion origin.",
+        "Profile HTML structure may change.",
+        "This interim provider does not promise bank, inventory, equipment, quests, collections, or live state."
+      ]
+    },
+    "manualProvider": {
+      "source": "manual",
+      "fields": [
+        "optional username",
+        "skill levels"
+      ],
+      "unknownFields": [
+        "XP",
+        "combat",
+        "equipment",
+        "inventory",
+        "bank",
+        "quests",
+        "collections",
+        "achievements",
+        "minigames"
+      ],
+      "policy": "User-entered levels are unverified. Blank skills stay unknown. Saving replaces the current snapshot; it does not merge public XP with edited levels. Username-only portable links do not include these levels."
+    },
+    "refreshPolicy": "A failed refresh retains only the same username snapshot, preserving its source and timestamp and marking refreshFailed. Changing username clears previous levels. Superseded responses are ignored. Browser persistence is optional."
+  }
+}

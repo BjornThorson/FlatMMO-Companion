@@ -1,0 +1,8 @@
+{
+  "baseline": "1924571b1e7b1ad40ac221f8477626796906807c",
+  "files": {
+    "companion-engine.js": "76f997d1691b6beb4bc6d0c09fc4c9123b7d0e91fb53a26edaaf58fa1ffc553d",
+    "companion-conversation.js": "32ccc948869bf341570122ffd2f0b716acdc961d237f3d0c90d769d55d50c3e9",
+    "conversation-regression.cjs": "8a1ce637fab845766d996a9778d73d98a54e7382fec2f21edb0c924e5d0b4be2"
+  }
+}

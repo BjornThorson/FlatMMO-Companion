@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>FlatMMO AI Prototype</title>
+<style>
+:root{font-family:system-ui,sans-serif;color-scheme:dark;background:#171513;color:#eee8dd}body{max-width:900px;margin:auto;padding:24px}h1{margin-bottom:4px}.sub{color:#bdb5a8;margin-top:0}.panel{background:#221f1b;border:1px solid #4a443b;border-radius:12px;padding:16px;margin:14px 0}.row{display:flex;gap:10px;flex-wrap:wrap}input,textarea,button{font:inherit}input,textarea{background:#12110f;color:#eee8dd;border:1px solid #5b5348;border-radius:8px;padding:10px}input{flex:1;min-width:220px}textarea{width:100%;min-height:82px;box-sizing:border-box}button{background:#4c6843;color:white;border:0;border-radius:8px;padding:10px 16px;cursor:pointer}button.secondary{background:#5c4b39}button:disabled{opacity:.6;cursor:wait}.msg{padding:12px 14px;border-radius:10px;margin:10px 0;white-space:pre-wrap}.user{background:#302a24}.bot{background:#223021}.tiny{font-size:12px;color:#aaa}.error{color:#ffb3a7}
+</style>
+</head>
+<body>
+<h1>FlatMMO AI Prototype</h1>
+<p class="sub"><a href="https://etherealaporia-alt.github.io/FlatMMO-Companion/?v=20260921">Project home</a> · The model handles language; FlatMMO facts come from deterministic JSON tools.</p>
+<div class="panel">
+  <strong>Public preview</strong>
+  <p class="tiny">No API key or setup is required. Requests are rate-limited to keep this free service available.</p>
+</div>
+<div id="chat" class="panel"><div class="bot msg">Try talking normally. Example: “I'm Stealing 12 — can I get Green Leaf Seeds without fighting?”</div></div>
+<div class="panel">
+<textarea id="q" placeholder="Ask about FlatMMO..."></textarea>
+<div class="row" style="margin-top:10px"><button id="send">Send</button><button id="clear" class="secondary">Clear conversation</button><button id="openWorker" class="secondary">Open API endpoint</button></div>
+<div id="status" class="tiny"></div>
+<div id="diag" class="tiny" style="margin-top:8px;display:none"></div>
+</div>
+<script>
+const APP_VERSION = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+const IS_PAGES = location.hostname.endsWith('.pages.dev');
+const PAGE_API_CANDIDATES = ['/API/chat', '/api/chat'];
+const WORKER_URL = IS_PAGES
+  ? PAGE_API_CANDIDATES[0]
+  : 'https://flatmmo-ai-prototype.etherealaporia.workers.dev/?v=' + APP_VERSION;
+const CLIENT_ID_KEY='flatmmo_ai_public_client';
+const $=s=>document.querySelector(s), chat=$('#chat'), q=$('#q'), send=$('#send'), status=$('#status'), diag=$('#diag');
+
+function setDiag(text){
+  diag.style.display = text ? 'block' : 'none';
+  diag.textContent = text || '';
+}
+
+if (location.protocol === 'file:') {
+  status.innerHTML='<span class="error">Open this page from a deployed site, not as a local file. The AI backend cannot be called from file:// pages.</span>';
+}
+setDiag('Page origin: ' + (location.origin || 'unknown') + ' | API target: ' + WORKER_URL);
+
+// Remove credentials/configuration saved by the private prototype page.
+localStorage.removeItem('flatmmo_ai_token');
+localStorage.removeItem('flatmmo_ai_worker');
+localStorage.removeItem('flatmmo_ai_debug');
+
+function newClientId(){
+  if(crypto.randomUUID)return crypto.randomUUID();
+  const bytes=new Uint8Array(16);crypto.getRandomValues(bytes);
+  return Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+}
+let clientId=localStorage.getItem(CLIENT_ID_KEY);
+if(!clientId){clientId=newClientId();localStorage.setItem(CLIENT_ID_KEY,clientId)}
+
+let messages=[];
+function add(role,text){const d=document.createElement('div');d.className='msg '+(role==='user'?'user':'bot');d.textContent=text;chat.appendChild(d);chat.scrollTop=chat.scrollHeight}
+async function ask(){
+  const text=q.value.trim();
+  if(!text)return;
+  if (location.protocol === 'file:') {
+    status.innerHTML='<span class="error">Open this page from a deployed site, not as a local file. The AI backend will not respond from file:// pages.</span>';
+    return;
+  }
+  messages.push({role:'user',content:text});
+  add('user',text);q.value='';send.disabled=true;status.textContent='Thinking…';
+  try {
+    const requestUrls = IS_PAGES ? PAGE_API_CANDIDATES : [WORKER_URL];
+    let r = null;
+    let data = {};
+    let requestUrl = requestUrls[0];
+    let lastError = null;
+
+    for (const candidate of requestUrls) {
+      requestUrl = candidate;
+      setDiag('Attempting fetch: ' + requestUrl + ' from origin ' + (location.origin || 'unknown'));
+      try {
+        const candidateResponse = await fetch(requestUrl,{method:'POST',mode:'cors',credentials:'omit',headers:{'content-type':'application/json','x-flatmmo-client':clientId},body:JSON.stringify({messages})});
+        let candidateData;
+        try { candidateData = await candidateResponse.json(); } catch { candidateData = {}; }
+
+        // On Pages, a 404/405 usually means the function route uses the other folder case.
+        if (IS_PAGES && (candidateResponse.status === 404 || candidateResponse.status === 405)) {
+          lastError = new Error((candidateData && (candidateData.message || candidateData.error)) || ('HTTP '+candidateResponse.status));
+          continue;
+        }
+
+        r = candidateResponse;
+        data = candidateData;
+        break;
+      } catch (candidateError) {
+        lastError = candidateError;
+      }
+    }
+
+    if (!r) throw lastError || new Error('No Pages API route responded.');
+    if(!r.ok)throw new Error((data && (data.message || data.error)) || ('HTTP '+r.status));
+    messages.push({role:'assistant',content:data.answer});
+    add('assistant',data.answer);status.textContent='';
+    setDiag('Fetch succeeded from ' + requestUrl + ' with response status ' + r.status + '.');
+  } catch(e) {
+    const baseMessage = String(e.message || e);
+    const originNote = location.origin && location.origin !== 'null' ? ' Browser origin: ' + location.origin : ' Browser origin unavailable';
+    const hint = IS_PAGES
+      ? ' This Pages deployment should expose /API/chat (or /api/chat) through the Pages Function. If it does not, check that functions/api/chat.js exists at the repository root and that Cloudflare redeployed the latest commit.'
+      : ' This page must be opened from the deployed GitHub Pages URL, not a local file or stale cached copy. If it still fails from that URL, a browser extension, local cache, or network policy may be blocking the request.';
+    status.innerHTML='<span class="error">Fetch failed: '+baseMessage.replace(/[<&]/g,c=>c==='<'?'&lt;':'&amp;') + originNote + hint.replace(/[<&]/g,c=>c==='<'?'&lt;':'&amp;')+'</span>';
+    setDiag('Fetch blocked or unreachable. Target: ' + WORKER_URL + ' | page origin: ' + (location.origin || 'unknown'));
+    messages.pop();
+  } finally {
+    send.disabled=false;q.focus();
+  }
+}
+send.onclick=ask;q.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask()}});$('#clear').onclick=()=>{messages=[];chat.innerHTML='<div class="bot msg">Conversation cleared.</div>';};
+$('#openWorker').onclick=()=>{window.open(WORKER_URL, '_blank', 'noopener');};
+</script>
+</body>
+</html>

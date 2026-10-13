@@ -1,0 +1,3239 @@
+{
+  "schemaVersion": 2,
+  "generated": "2026-09-15",
+  "status": "deep_normalized_v1_1",
+  "sourcePolicy": "Normalized/paraphrased community-wiki facts; explicit equip and craft requirements are kept separate.",
+  "sources": [
+    "https://flatmmo.wiki/index.php/Melee",
+    "https://flatmmo.wiki/index.php/Archery",
+    "https://flatmmo.wiki/index.php/Magic",
+    "https://flatmmo.wiki/index.php/Armour",
+    "https://flatmmo.wiki/index.php/Forging",
+    "https://flatmmo.wiki/index.php/Crafting",
+    "https://flatmmo.wiki/index.php/Enchantment",
+    "https://flatmmo.wiki/index.php/Quests",
+    "https://flatmmo.wiki/index.php/Farming",
+    "https://flatmmo.wiki/index.php/Brewing",
+    "https://flatmmo.wiki/index.php/Fermenting"
+  ],
+  "combatStyles": {
+    "melee": {
+      "skill": "Melee",
+      "attackRequirement": "Equip a melee-type weapon.",
+      "xpRule": "8 Melee XP per point of melee damage dealt",
+      "levelBonus": "+1 Melee damage per 10 Melee levels",
+      "weaponFamilies": [
+        "swords",
+        "scimitars",
+        "maces",
+        "knives",
+        "spears"
+      ],
+      "armourFamily": "melee",
+      "armourEffect": "Melee armour protects against Melee and Archery attacks.",
+      "sources": [
+        "https://flatmmo.wiki/index.php/Melee",
+        "https://flatmmo.wiki/index.php/Armour"
+      ]
+    },
+    "archery": {
+      "skill": "Archery",
+      "attackRequirement": "Equip both a bow and arrows.",
+      "xpRule": "8 Archery XP per point of Archery damage dealt",
+      "levelBonus": "+1 Archery damage per 10 Archery levels",
+      "weaponFamilies": [
+        "bows",
+        "arrows"
+      ],
+      "consumable": "Arrows are consumed when attacking.",
+      "armourFamily": "archery",
+      "armourEffect": "Archery armour adds Archery Damage and Magic Defence.",
+      "sources": [
+        "https://flatmmo.wiki/index.php/Archery",
+        "https://flatmmo.wiki/index.php/Armour"
+      ]
+    },
+    "magic": {
+      "skill": "Magic",
+      "attackRequirement": "Equip a staff, a Damage Orb, and an Element Orb.",
+      "xpRule": "8 Magic XP per point of Magic damage dealt",
+      "levelBonus": "+1 Magic damage per 10 Magic levels",
+      "weaponFamilies": [
+        "staves"
+      ],
+      "orbProgression": "enchantmentOrbs",
+      "armourFamily": "magic",
+      "armourEffect": "Magic armour adds Magic Damage.",
+      "sources": [
+        "https://flatmmo.wiki/index.php/Magic",
+        "https://flatmmo.wiki/index.php/Armour",
+        "https://flatmmo.wiki/index.php/Enchantment"
+      ]
+    }
+  },
+  "productionChains": {
+    "smelting": [
+      {
+        "name": "Bronze Bar",
+        "skill": "Forging",
+        "level": 1,
+        "xp": 10,
+        "materials": {
+          "copper": 1,
+          "coal": 1
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Iron Bar",
+        "skill": "Forging",
+        "level": 5,
+        "xp": 25,
+        "materials": {
+          "iron_ore": 1,
+          "coal": 1
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Silver Bar",
+        "skill": "Forging",
+        "level": 15,
+        "xp": 40,
+        "materials": {
+          "silver_ore": 1,
+          "coal": 2
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Gold Bar",
+        "skill": "Forging",
+        "level": 30,
+        "xp": 60,
+        "materials": {
+          "gold_ore": 1,
+          "coal": 3
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Promethium Bar",
+        "skill": "Forging",
+        "level": 50,
+        "xp": 150,
+        "materials": {
+          "promethium_ore": 1,
+          "coal": 10,
+          "charcoal": 5
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Titanium Bar",
+        "skill": "Forging",
+        "level": 65,
+        "xp": 250,
+        "materials": {
+          "titanium_ore": 1,
+          "coal": 25,
+          "charcoal": 10
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      },
+      {
+        "name": "Ancient Bar",
+        "skill": "Forging",
+        "level": 75,
+        "xp": 500,
+        "materials": {
+          "ancient_ore": 1,
+          "coal": 50,
+          "charcoal": 25,
+          "lava_bucket": 1
+        },
+        "source": "https://flatmmo.wiki/index.php/Forging"
+      }
+    ],
+    "charcoal": {
+      "name": "Charcoal",
+      "materials": {
+        "woodchips": 50,
+        "coins": 600
+      },
+      "location": "Charcoal Kiln, Mine 2nd floor",
+      "source": "https://flatmmo.wiki/index.php/Forging"
+    }
+  },
+  "weaponFamilies": {
+    "swords": [
+      {
+        "name": "Bronze Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 3,
+        "accuracy": 0,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "craftSkill": "Forging",
+        "craftLevel": 5,
+        "craftXp": 375,
+        "materials": {
+          "bronze_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Iron Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 4,
+        "accuracy": 1,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "craftSkill": "Forging",
+        "craftLevel": 20,
+        "craftXp": 675,
+        "materials": {
+          "iron_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Silver Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 5,
+        "accuracy": 2,
+        "equipSkill": "Melee",
+        "equipLevel": 20,
+        "craftSkill": "Forging",
+        "craftLevel": 30,
+        "craftXp": 1080,
+        "materials": {
+          "silver_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Gold Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 6,
+        "accuracy": 3,
+        "equipSkill": "Melee",
+        "equipLevel": 40,
+        "craftSkill": "Forging",
+        "craftLevel": 40,
+        "craftXp": 1605,
+        "materials": {
+          "gold_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Promethium Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 8,
+        "accuracy": 5,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "craftSkill": "Forging",
+        "craftLevel": 55,
+        "craftXp": 2760,
+        "materials": {
+          "promethium_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Titanium Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 11,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "craftSkill": "Forging",
+        "craftLevel": 65,
+        "craftXp": 5220,
+        "materials": {
+          "titanium_bar": 15
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Ancient Sword",
+        "style": "melee",
+        "subtype": "slash",
+        "damage": 13,
+        "accuracy": 12,
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "craftSkill": "Forging",
+        "craftLevel": 80,
+        "craftXp": 13470,
+        "materials": {
+          "ancient_bar": 15,
+          "titanium_sword": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      }
+    ],
+    "scimitars": [
+      {
+        "name": "Bronze Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 5,
+        "accuracy": 0,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "craftSkill": "Forging",
+        "craftLevel": 15,
+        "craftXp": 375,
+        "materials": {
+          "scimitar_handle": 1,
+          "bronze_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Iron Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 6,
+        "accuracy": 1,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "craftSkill": "Forging",
+        "craftLevel": 30,
+        "craftXp": 675,
+        "materials": {
+          "scimitar_handle": 1,
+          "iron_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Silver Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 7,
+        "accuracy": 2,
+        "equipSkill": "Melee",
+        "equipLevel": 20,
+        "craftSkill": "Forging",
+        "craftLevel": 40,
+        "craftXp": 1080,
+        "materials": {
+          "scimitar_handle": 1,
+          "silver_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Gold Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 8,
+        "accuracy": 3,
+        "equipSkill": "Melee",
+        "equipLevel": 40,
+        "craftSkill": "Forging",
+        "craftLevel": 50,
+        "craftXp": 1605,
+        "materials": {
+          "scimitar_handle": 1,
+          "gold_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Promethium Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 10,
+        "accuracy": 5,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "craftSkill": "Forging",
+        "craftLevel": 65,
+        "craftXp": 2760,
+        "materials": {
+          "scimitar_handle": 1,
+          "promethium_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Titanium Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 13,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "craftSkill": "Forging",
+        "craftLevel": 75,
+        "craftXp": 5220,
+        "materials": {
+          "scimitar_handle": 1,
+          "titanium_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      },
+      {
+        "name": "Ancient Scimitar",
+        "style": "melee",
+        "subtype": "slash_scimitar",
+        "damage": 15,
+        "accuracy": 12,
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "craftSkill": "Forging",
+        "craftLevel": 90,
+        "craftXp": 11857,
+        "materials": {
+          "scimitar_handle": 1,
+          "ancient_blade": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "verificationNote": "Craft level follows the current Forging page; older scimitar material/pages have shown lower smithing levels."
+      }
+    ],
+    "maces": [
+      {
+        "name": "Bronze Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 2,
+        "accuracy": 0,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "craftSkill": "Forging",
+        "craftLevel": 3,
+        "craftXp": 250,
+        "materials": {
+          "bronze_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Iron Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 3,
+        "accuracy": 0,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "craftSkill": "Forging",
+        "craftLevel": 15,
+        "craftXp": 450,
+        "materials": {
+          "iron_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Silver Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 4,
+        "accuracy": 2,
+        "equipSkill": "Melee",
+        "equipLevel": 20,
+        "craftSkill": "Forging",
+        "craftLevel": 20,
+        "craftXp": 720,
+        "materials": {
+          "silver_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Gold Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 5,
+        "accuracy": 3,
+        "equipSkill": "Melee",
+        "equipLevel": 40,
+        "craftSkill": "Forging",
+        "craftLevel": 35,
+        "craftXp": 1070,
+        "materials": {
+          "gold_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Promethium Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 7,
+        "accuracy": 5,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "craftSkill": "Forging",
+        "craftLevel": 50,
+        "craftXp": 1840,
+        "materials": {
+          "promethium_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Titanium Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 10,
+        "accuracy": 8,
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "craftSkill": "Forging",
+        "craftLevel": 60,
+        "craftXp": 3480,
+        "materials": {
+          "titanium_bar": 10
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Ancient Mace",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 12,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "craftSkill": "Forging",
+        "craftLevel": 75,
+        "craftXp": 8980,
+        "materials": {
+          "ancient_bar": 10,
+          "titanium_mace": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Club",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 2,
+        "accuracy": 0,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "craftSkill": "Crafting",
+        "craftLevel": 1,
+        "materials": {
+          "logs": 6
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Ogre Club",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 10,
+        "accuracy": 8,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "sourceMethod": "drop/source not normalized here",
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ]
+      },
+      {
+        "name": "Ice Ogre Club",
+        "style": "melee",
+        "subtype": "crush",
+        "damage": 12,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 65,
+        "sourceMethod": "drop/source not normalized here",
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ]
+      }
+    ],
+    "knives": [
+      {
+        "name": "Bronze Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 2,
+        "accuracy": 1,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "craftSkill": "Forging",
+        "craftLevel": 1,
+        "craftXp": 125,
+        "materials": {
+          "bronze_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Iron Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 3,
+        "accuracy": 2,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "craftSkill": "Forging",
+        "craftLevel": 10,
+        "craftXp": 225,
+        "materials": {
+          "iron_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Silver Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 4,
+        "accuracy": 3,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "craftSkill": "Forging",
+        "craftLevel": 15,
+        "craftXp": 360,
+        "materials": {
+          "silver_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Gold Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 5,
+        "accuracy": 4,
+        "equipSkill": "Melee",
+        "equipLevel": 30,
+        "craftSkill": "Forging",
+        "craftLevel": 30,
+        "craftXp": 535,
+        "materials": {
+          "gold_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Promethium Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 7,
+        "accuracy": 6,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "craftSkill": "Forging",
+        "craftLevel": 45,
+        "craftXp": 920,
+        "materials": {
+          "promethium_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Titanium Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 9,
+        "accuracy": 8,
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "craftSkill": "Forging",
+        "craftLevel": 55,
+        "craftXp": 1740,
+        "materials": {
+          "titanium_bar": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Ancient Knife",
+        "style": "melee",
+        "subtype": "stab",
+        "damage": 11,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "craftSkill": "Forging",
+        "craftLevel": 70,
+        "craftXp": 4490,
+        "materials": {
+          "ancient_bar": 5,
+          "titanium_knife": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      }
+    ],
+    "spears": [
+      {
+        "name": "Bronze Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 5,
+        "accuracy": 1,
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ],
+        "craftStatus": "craft recipe not established in this ingestion pass"
+      },
+      {
+        "name": "Iron Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 6,
+        "accuracy": 2,
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ],
+        "craftStatus": "craft recipe not established in this ingestion pass"
+      },
+      {
+        "name": "Silver Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 7,
+        "accuracy": 3,
+        "equipSkill": "Melee",
+        "equipLevel": 20,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ],
+        "craftStatus": "craft recipe not established in this ingestion pass"
+      },
+      {
+        "name": "Gold Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 8,
+        "accuracy": 4,
+        "equipSkill": "Melee",
+        "equipLevel": 30,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee"
+        ],
+        "craftStatus": "craft recipe not established in this ingestion pass"
+      },
+      {
+        "name": "Promethium Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 10,
+        "accuracy": 6,
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "craftSkill": "Forging",
+        "craftLevel": 50,
+        "craftXp": 2960,
+        "materials": {
+          "promethium_bar": 15,
+          "logs": 40,
+          "promethium_spear_tip": 1
+        }
+      },
+      {
+        "name": "Titanium Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 13,
+        "accuracy": 8,
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "craftSkill": "Forging",
+        "craftLevel": 70,
+        "craftXp": 5420,
+        "materials": {
+          "titanium_bar": 15,
+          "logs": 40,
+          "titanium_spear_tip": 1
+        }
+      },
+      {
+        "name": "Ancient Spear",
+        "style": "melee",
+        "subtype": "stab_long",
+        "damage": 15,
+        "accuracy": 10,
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "rangeTiles": 2,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Forging"
+        ],
+        "craftSkill": "Forging",
+        "craftLevel": 85,
+        "craftXp": 13670,
+        "materials": {
+          "ancient_bar": 15,
+          "logs": 40,
+          "ancient_spear_tip": 1
+        }
+      }
+    ],
+    "bows": [
+      {
+        "name": "Bow",
+        "style": "archery",
+        "accuracy": 1,
+        "equipSkill": "Archery",
+        "equipLevel": 1,
+        "craftSkill": "Crafting",
+        "craftLevel": 3,
+        "craftXp": 165,
+        "materials": {
+          "string": 5,
+          "logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Oak Bow",
+        "style": "archery",
+        "accuracy": 2,
+        "equipSkill": "Archery",
+        "equipLevel": 10,
+        "craftSkill": "Crafting",
+        "craftLevel": 10,
+        "craftXp": 315,
+        "materials": {
+          "string": 5,
+          "oak_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Willow Bow",
+        "style": "archery",
+        "accuracy": 3,
+        "equipSkill": "Archery",
+        "equipLevel": 20,
+        "craftSkill": "Crafting",
+        "craftLevel": 20,
+        "craftXp": 675,
+        "materials": {
+          "string": 5,
+          "willow_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Maple Bow",
+        "style": "archery",
+        "accuracy": 4,
+        "equipSkill": "Archery",
+        "equipLevel": 30,
+        "craftSkill": "Crafting",
+        "craftLevel": 30,
+        "craftXp": 915,
+        "materials": {
+          "string": 5,
+          "maple_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Mangrove Bow",
+        "style": "archery",
+        "accuracy": 6,
+        "equipSkill": "Archery",
+        "equipLevel": 40,
+        "craftSkill": "Crafting",
+        "craftLevel": 40,
+        "craftXp": 1515,
+        "materials": {
+          "string": 5,
+          "mangrove_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Haunted Bow",
+        "style": "archery",
+        "accuracy": 8,
+        "equipSkill": "Archery",
+        "equipLevel": 50,
+        "craftSkill": "Crafting",
+        "craftLevel": 50,
+        "craftXp": 8015,
+        "materials": {
+          "string": 5,
+          "haunted_logs": 30,
+          "silkfang_string": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Cactus Bow",
+        "style": "archery",
+        "accuracy": 10,
+        "equipSkill": "Archery",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 70,
+        "craftXp": 12500,
+        "materials": {
+          "haunted_bow": 1,
+          "cactus_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Blessed Bow",
+        "style": "archery",
+        "accuracy": 10,
+        "equipSkill": "Archery",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 70,
+        "craftXp": 14000,
+        "materials": {
+          "haunted_bow": 1,
+          "blessed_logs": 30
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Magic Bow",
+        "style": "archery",
+        "accuracy": 12,
+        "equipSkill": "Archery",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 80,
+        "craftXp": 14400,
+        "materials": {
+          "cactus_bow": 1,
+          "magic_logs": 30,
+          "valebark": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      }
+    ],
+    "arrows": [
+      {
+        "name": "Bronze Arrows",
+        "style": "archery",
+        "damage": 1,
+        "equipSkill": "Archery",
+        "equipLevel": 1,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 1,
+        "craftXp": 1,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "bronze_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Iron Arrows",
+        "style": "archery",
+        "damage": 2,
+        "equipSkill": "Archery",
+        "equipLevel": 10,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 5,
+        "craftXp": 2,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "iron_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Silver Arrows",
+        "style": "archery",
+        "damage": 3,
+        "equipSkill": "Archery",
+        "equipLevel": 20,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 15,
+        "craftXp": 3,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "silver_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Gold Arrows",
+        "style": "archery",
+        "damage": 4,
+        "equipSkill": "Archery",
+        "equipLevel": 30,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 25,
+        "craftXp": 4,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "gold_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Promethium Arrows",
+        "style": "archery",
+        "damage": 7,
+        "equipSkill": "Archery",
+        "equipLevel": 50,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 40,
+        "craftXp": 6,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "promethium_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Titanium Arrows",
+        "style": "archery",
+        "damage": 10,
+        "equipSkill": "Archery",
+        "equipLevel": 70,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 65,
+        "craftXp": 9,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "titanium_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Ancient Arrows",
+        "style": "archery",
+        "damage": 12,
+        "equipSkill": "Archery",
+        "equipLevel": 80,
+        "consumedOnAttack": true,
+        "craftSkill": "Crafting",
+        "craftLevel": 80,
+        "craftXp": 20,
+        "materials": {
+          "feathers": 1,
+          "arrow_shafts": 1,
+          "ancient_arrowheads": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      }
+    ],
+    "staves": [
+      {
+        "name": "Staff",
+        "style": "magic",
+        "accuracy": 1,
+        "equipSkill": "Magic",
+        "equipLevel": 1,
+        "craftSkill": "Crafting",
+        "craftLevel": 1,
+        "materials": {
+          "logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Oak Staff",
+        "style": "magic",
+        "accuracy": 2,
+        "equipSkill": "Magic",
+        "equipLevel": 10,
+        "craftSkill": "Crafting",
+        "craftLevel": 10,
+        "materials": {
+          "oak_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Willow Staff",
+        "style": "magic",
+        "accuracy": 3,
+        "equipSkill": "Magic",
+        "equipLevel": 20,
+        "craftSkill": "Crafting",
+        "craftLevel": 20,
+        "materials": {
+          "willow_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Maple Staff",
+        "style": "magic",
+        "accuracy": 4,
+        "equipSkill": "Magic",
+        "equipLevel": 30,
+        "craftSkill": "Crafting",
+        "craftLevel": 30,
+        "materials": {
+          "maple_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Mangrove Staff",
+        "style": "magic",
+        "accuracy": 5,
+        "equipSkill": "Magic",
+        "equipLevel": 40,
+        "craftSkill": "Crafting",
+        "craftLevel": 40,
+        "materials": {
+          "mangrove_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ],
+        "verificationNote": "Current Magic page lists accuracy 5; an older normalized snapshot listed 6."
+      },
+      {
+        "name": "Haunted Staff",
+        "style": "magic",
+        "accuracy": 8,
+        "equipSkill": "Magic",
+        "equipLevel": 50,
+        "craftSkill": "Crafting",
+        "craftLevel": 50,
+        "materials": {
+          "haunted_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Cactus Staff",
+        "style": "magic",
+        "accuracy": 10,
+        "equipSkill": "Magic",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 70,
+        "materials": {
+          "haunted_staff": 1,
+          "cactus_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Blessed Staff",
+        "style": "magic",
+        "accuracy": 10,
+        "equipSkill": "Magic",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 70,
+        "materials": {
+          "haunted_staff": 1,
+          "blessed_logs": 24
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Magic Staff",
+        "style": "magic",
+        "accuracy": 12,
+        "equipSkill": "Magic",
+        "equipLevel": 70,
+        "craftSkill": "Crafting",
+        "craftLevel": 80,
+        "materials": {
+          "cactus_staff": 1,
+          "magic_logs": 24,
+          "valebark": 1
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      }
+    ]
+  },
+  "armourSets": {
+    "melee": [
+      {
+        "name": "Bronze Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 1,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 1,
+          "archeryDefence": 1
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 10,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Bronze Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 1,
+            "bonuses": {
+              "meleeDefence": 1,
+              "archeryDefence": 1
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 10,
+            "materials": {
+              "bronze_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Bronze Body",
+            "equipSkill": "Melee",
+            "equipLevel": 1,
+            "bonuses": {
+              "meleeDefence": 1,
+              "archeryDefence": 1
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 10,
+            "materials": {
+              "bronze_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Bronze Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 1,
+            "bonuses": {
+              "meleeDefence": 1,
+              "archeryDefence": 1
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 10,
+            "materials": {
+              "bronze_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Bronze Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 1,
+            "bonuses": {
+              "meleeDefence": 1,
+              "archeryDefence": 1
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 10,
+            "materials": {
+              "bronze_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Bronze Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 1,
+            "bonuses": {
+              "meleeDefence": 1,
+              "archeryDefence": 1
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 10,
+            "materials": {
+              "bronze_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "bronze_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Iron Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 10,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 2,
+          "archeryDefence": 2
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 25,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Iron Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 10,
+            "bonuses": {
+              "meleeDefence": 2,
+              "archeryDefence": 2
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 25,
+            "materials": {
+              "iron_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Iron Body",
+            "equipSkill": "Melee",
+            "equipLevel": 10,
+            "bonuses": {
+              "meleeDefence": 2,
+              "archeryDefence": 2
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 25,
+            "materials": {
+              "iron_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Iron Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 10,
+            "bonuses": {
+              "meleeDefence": 2,
+              "archeryDefence": 2
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 25,
+            "materials": {
+              "iron_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Iron Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 10,
+            "bonuses": {
+              "meleeDefence": 2,
+              "archeryDefence": 2
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 25,
+            "materials": {
+              "iron_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Iron Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 10,
+            "bonuses": {
+              "meleeDefence": 2,
+              "archeryDefence": 2
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 25,
+            "materials": {
+              "iron_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "iron_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Silver Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 20,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 3,
+          "archeryDefence": 3
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 35,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Silver Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 20,
+            "bonuses": {
+              "meleeDefence": 3,
+              "archeryDefence": 3
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 35,
+            "materials": {
+              "silver_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Silver Body",
+            "equipSkill": "Melee",
+            "equipLevel": 20,
+            "bonuses": {
+              "meleeDefence": 3,
+              "archeryDefence": 3
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 35,
+            "materials": {
+              "silver_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Silver Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 20,
+            "bonuses": {
+              "meleeDefence": 3,
+              "archeryDefence": 3
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 35,
+            "materials": {
+              "silver_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Silver Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 20,
+            "bonuses": {
+              "meleeDefence": 3,
+              "archeryDefence": 3
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 35,
+            "materials": {
+              "silver_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Silver Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 20,
+            "bonuses": {
+              "meleeDefence": 3,
+              "archeryDefence": 3
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 35,
+            "materials": {
+              "silver_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "silver_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Gold Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 30,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 4,
+          "archeryDefence": 4
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 50,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Gold Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 30,
+            "bonuses": {
+              "meleeDefence": 4,
+              "archeryDefence": 4
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 50,
+            "materials": {
+              "gold_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Gold Body",
+            "equipSkill": "Melee",
+            "equipLevel": 30,
+            "bonuses": {
+              "meleeDefence": 4,
+              "archeryDefence": 4
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 50,
+            "materials": {
+              "gold_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Gold Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 30,
+            "bonuses": {
+              "meleeDefence": 4,
+              "archeryDefence": 4
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 50,
+            "materials": {
+              "gold_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Gold Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 30,
+            "bonuses": {
+              "meleeDefence": 4,
+              "archeryDefence": 4
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 50,
+            "materials": {
+              "gold_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Gold Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 30,
+            "bonuses": {
+              "meleeDefence": 4,
+              "archeryDefence": 4
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 50,
+            "materials": {
+              "gold_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "gold_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Promethium Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 50,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 6,
+          "archeryDefence": 6
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 65,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Promethium Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 50,
+            "bonuses": {
+              "meleeDefence": 6,
+              "archeryDefence": 6
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 65,
+            "materials": {
+              "promethium_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Promethium Body",
+            "equipSkill": "Melee",
+            "equipLevel": 50,
+            "bonuses": {
+              "meleeDefence": 6,
+              "archeryDefence": 6
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 65,
+            "materials": {
+              "promethium_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Promethium Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 50,
+            "bonuses": {
+              "meleeDefence": 6,
+              "archeryDefence": 6
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 65,
+            "materials": {
+              "promethium_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Promethium Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 50,
+            "bonuses": {
+              "meleeDefence": 6,
+              "archeryDefence": 6
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 65,
+            "materials": {
+              "promethium_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Promethium Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 50,
+            "bonuses": {
+              "meleeDefence": 6,
+              "archeryDefence": 6
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 65,
+            "materials": {
+              "promethium_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "promethium_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Titanium Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 70,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 7,
+          "archeryDefence": 7
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 75,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Titanium Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 70,
+            "bonuses": {
+              "meleeDefence": 7,
+              "archeryDefence": 7
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 75,
+            "materials": {
+              "titanium_bar": 15
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Titanium Body",
+            "equipSkill": "Melee",
+            "equipLevel": 70,
+            "bonuses": {
+              "meleeDefence": 7,
+              "archeryDefence": 7
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 75,
+            "materials": {
+              "titanium_bar": 50
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Titanium Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 70,
+            "bonuses": {
+              "meleeDefence": 7,
+              "archeryDefence": 7
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 75,
+            "materials": {
+              "titanium_bar": 30
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Titanium Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 70,
+            "bonuses": {
+              "meleeDefence": 7,
+              "archeryDefence": 7
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 75,
+            "materials": {
+              "titanium_bar": 15
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Titanium Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 70,
+            "bonuses": {
+              "meleeDefence": 7,
+              "archeryDefence": 7
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 75,
+            "materials": {
+              "titanium_bar": 15
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "titanium_bar": 125
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      },
+      {
+        "name": "Ancient Armour",
+        "style": "melee",
+        "equipSkill": "Melee",
+        "equipLevel": 80,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "meleeDefence": 9,
+          "archeryDefence": 9
+        },
+        "craftSkill": "Forging",
+        "craftLevel": 90,
+        "pieces": [
+          {
+            "slot": "helmet",
+            "name": "Ancient Helmet",
+            "equipSkill": "Melee",
+            "equipLevel": 80,
+            "bonuses": {
+              "meleeDefence": 9,
+              "archeryDefence": 9
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 90,
+            "materials": {
+              "ancient_bar": 15,
+              "titanium_helmet": 1
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Ancient Body",
+            "equipSkill": "Melee",
+            "equipLevel": 80,
+            "bonuses": {
+              "meleeDefence": 9,
+              "archeryDefence": 9
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 90,
+            "materials": {
+              "ancient_bar": 50,
+              "titanium_body": 1
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Ancient Legs",
+            "equipSkill": "Melee",
+            "equipLevel": 80,
+            "bonuses": {
+              "meleeDefence": 9,
+              "archeryDefence": 9
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 90,
+            "materials": {
+              "ancient_bar": 30,
+              "titanium_legs": 1
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Ancient Gloves",
+            "equipSkill": "Melee",
+            "equipLevel": 80,
+            "bonuses": {
+              "meleeDefence": 9,
+              "archeryDefence": 9
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 90,
+            "materials": {
+              "ancient_bar": 15,
+              "titanium_gloves": 1
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Ancient Boots",
+            "equipSkill": "Melee",
+            "equipLevel": 80,
+            "bonuses": {
+              "meleeDefence": 9,
+              "archeryDefence": 9
+            },
+            "craftSkill": "Forging",
+            "craftLevel": 90,
+            "materials": {
+              "ancient_bar": 15,
+              "titanium_boots": 1
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "ancient_bar": 125,
+          "titanium_armour_corresponding_pieces": 5
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Melee",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Forging"
+        ]
+      }
+    ],
+    "archery": [
+      {
+        "name": "Snakeskin Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 10,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 1,
+          "magicDefence": 1
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          5,
+          5
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Snakeskin Mask",
+            "equipLevel": 10,
+            "craftSkill": "Crafting",
+            "craftLevel": 5,
+            "materials": {
+              "string": 2,
+              "snakeskin": 5
+            },
+            "bonuses": {
+              "archeryDamage": 1,
+              "magicDefence": 1
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Snakeskin Body",
+            "equipLevel": 10,
+            "craftSkill": "Crafting",
+            "craftLevel": 5,
+            "materials": {
+              "string": 6,
+              "snakeskin": 15
+            },
+            "bonuses": {
+              "archeryDamage": 1,
+              "magicDefence": 1
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Snakeskin Legs",
+            "equipLevel": 10,
+            "craftSkill": "Crafting",
+            "craftLevel": 5,
+            "materials": {
+              "string": 4,
+              "snakeskin": 10
+            },
+            "bonuses": {
+              "archeryDamage": 1,
+              "magicDefence": 1
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Snakeskin Gloves",
+            "equipLevel": 10,
+            "craftSkill": "Crafting",
+            "craftLevel": 5,
+            "materials": {
+              "string": 1,
+              "snakeskin": 2
+            },
+            "bonuses": {
+              "archeryDamage": 1,
+              "magicDefence": 1
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Snakeskin Boots",
+            "equipLevel": 10,
+            "craftSkill": "Crafting",
+            "craftLevel": 5,
+            "materials": {
+              "string": 1,
+              "snakeskin": 2
+            },
+            "bonuses": {
+              "archeryDamage": 1,
+              "magicDefence": 1
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 14,
+          "snakeskin": 34
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Bear Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 20,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 2,
+          "magicDefence": 2
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          15,
+          15
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Bear Mask",
+            "equipLevel": 20,
+            "craftSkill": "Crafting",
+            "craftLevel": 15,
+            "materials": {
+              "string": 2,
+              "bear_fur": 5
+            },
+            "bonuses": {
+              "archeryDamage": 2,
+              "magicDefence": 2
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Bear Body",
+            "equipLevel": 20,
+            "craftSkill": "Crafting",
+            "craftLevel": 15,
+            "materials": {
+              "string": 2,
+              "bear_fur": 15
+            },
+            "bonuses": {
+              "archeryDamage": 2,
+              "magicDefence": 2
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Bear Legs",
+            "equipLevel": 20,
+            "craftSkill": "Crafting",
+            "craftLevel": 15,
+            "materials": {
+              "string": 2,
+              "bear_fur": 10
+            },
+            "bonuses": {
+              "archeryDamage": 2,
+              "magicDefence": 2
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Bear Gloves",
+            "equipLevel": 20,
+            "craftSkill": "Crafting",
+            "craftLevel": 15,
+            "materials": {
+              "string": 2,
+              "bear_fur": 2
+            },
+            "bonuses": {
+              "archeryDamage": 2,
+              "magicDefence": 2
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Bear Boots",
+            "equipLevel": 20,
+            "craftSkill": "Crafting",
+            "craftLevel": 15,
+            "materials": {
+              "string": 1,
+              "bear_fur": 2
+            },
+            "bonuses": {
+              "archeryDamage": 2,
+              "magicDefence": 2
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 9,
+          "bear_fur": 34
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ],
+        "special": "Reduces Frostvale cold damage by 1 per piece"
+      },
+      {
+        "name": "Tiger Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 30,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 3,
+          "magicDefence": 3
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          30,
+          30
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Tiger Mask",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 30,
+            "materials": {
+              "string": 5,
+              "tiger_fur": 5
+            },
+            "bonuses": {
+              "archeryDamage": 3,
+              "magicDefence": 3
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Tiger Body",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 30,
+            "materials": {
+              "string": 15,
+              "tiger_fur": 20
+            },
+            "bonuses": {
+              "archeryDamage": 3,
+              "magicDefence": 3
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Tiger Legs",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 30,
+            "materials": {
+              "string": 15,
+              "tiger_fur": 10
+            },
+            "bonuses": {
+              "archeryDamage": 3,
+              "magicDefence": 3
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Tiger Gloves",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 30,
+            "materials": {
+              "string": 5,
+              "tiger_fur": 3
+            },
+            "bonuses": {
+              "archeryDamage": 3,
+              "magicDefence": 3
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Tiger Boots",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 30,
+            "materials": {
+              "string": 5,
+              "tiger_fur": 3
+            },
+            "bonuses": {
+              "archeryDamage": 3,
+              "magicDefence": 3
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 45,
+          "tiger_fur": 41
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Wolf Fur Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 30,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 4,
+          "magicDefence": 4
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          35,
+          45
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Wolf Fur Mask",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 15,
+              "wolf_fur": 5
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Wolf Fur Body",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 45,
+            "materials": {
+              "string": 20,
+              "wolf_fur": 15
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Wolf Fur Legs",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 45,
+            "materials": {
+              "string": 20,
+              "wolf_fur": 10
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Wolf Fur Gloves",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 35,
+            "materials": {
+              "string": 10,
+              "wolf_fur": 5
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Wolf Fur Boots",
+            "equipLevel": 30,
+            "craftSkill": "Crafting",
+            "craftLevel": 35,
+            "materials": {
+              "string": 10,
+              "wolf_fur": 5
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 75,
+          "wolf_fur": 40
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ],
+        "special": "Reduces Frostvale cold damage by 2 per piece"
+      },
+      {
+        "name": "Crocodile Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 40,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 4,
+          "magicDefence": 4
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          40,
+          40
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Crocodile Mask",
+            "equipLevel": 40,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 5,
+              "crocodile_hide": 5
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Crocodile Body",
+            "equipLevel": 40,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 20,
+              "crocodile_hide": 15
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Crocodile Legs",
+            "equipLevel": 40,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 15,
+              "crocodile_hide": 10
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Crocodile Gloves",
+            "equipLevel": 40,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 5,
+              "crocodile_hide": 3
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Crocodile Boots",
+            "equipLevel": 40,
+            "craftSkill": "Crafting",
+            "craftLevel": 40,
+            "materials": {
+              "string": 5,
+              "crocodile_hide": 3
+            },
+            "bonuses": {
+              "archeryDamage": 4,
+              "magicDefence": 4
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 50,
+          "crocodile_hide": 36
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Silkfang Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 50,
+        "pieceCount": 5,
+        "bonusesPerPiece": {
+          "archeryDamage": 5,
+          "magicDefence": 5
+        },
+        "craftSkill": "Crafting",
+        "craftLevelRange": [
+          50,
+          50
+        ],
+        "pieces": [
+          {
+            "slot": "mask",
+            "name": "Silkfang Mask",
+            "equipLevel": 50,
+            "craftSkill": "Crafting",
+            "craftLevel": 50,
+            "materials": {
+              "string": 5,
+              "silkfang_hide": 1,
+              "baby_silkfang_hide": 5
+            },
+            "bonuses": {
+              "archeryDamage": 5,
+              "magicDefence": 5
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Silkfang Body",
+            "equipLevel": 50,
+            "craftSkill": "Crafting",
+            "craftLevel": 50,
+            "materials": {
+              "string": 20,
+              "silkfang_hide": 1,
+              "baby_silkfang_hide": 15
+            },
+            "bonuses": {
+              "archeryDamage": 5,
+              "magicDefence": 5
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Silkfang Legs",
+            "equipLevel": 50,
+            "craftSkill": "Crafting",
+            "craftLevel": 50,
+            "materials": {
+              "string": 15,
+              "silkfang_hide": 1,
+              "baby_silkfang_hide": 10
+            },
+            "bonuses": {
+              "archeryDamage": 5,
+              "magicDefence": 5
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Silkfang Gloves",
+            "equipLevel": 50,
+            "craftSkill": "Crafting",
+            "craftLevel": 50,
+            "materials": {
+              "string": 5,
+              "silkfang_hide": 1,
+              "baby_silkfang_hide": 3
+            },
+            "bonuses": {
+              "archeryDamage": 5,
+              "magicDefence": 5
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Silkfang Boots",
+            "equipLevel": 50,
+            "craftSkill": "Crafting",
+            "craftLevel": 50,
+            "materials": {
+              "string": 5,
+              "silkfang_hide": 1,
+              "baby_silkfang_hide": 3
+            },
+            "bonuses": {
+              "archeryDamage": 5,
+              "magicDefence": 5
+            }
+          }
+        ],
+        "setMaterialTotals": {
+          "string": 50,
+          "silkfang_hide": 5,
+          "baby_silkfang_hide": 36
+        },
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Crafting"
+        ]
+      },
+      {
+        "name": "Noctyrix Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 60,
+        "pieceCount": 6,
+        "bonusesPerPiece": {
+          "archeryDamage": 6,
+          "magicDefence": 6
+        },
+        "special": "Includes Noctyrix Ears; full set summary is +37 Archery Damage / +30 Magic Defence.",
+        "sourceMethod": "drops/source acquisition; no crafting recipe established in this pass",
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Armour"
+        ]
+      },
+      {
+        "name": "Rogue Archer Armour",
+        "style": "archery",
+        "equipSkill": "Archery",
+        "equipLevel": 70,
+        "pieceCount": 3,
+        "bonusesPerPiece": {
+          "archeryDamage": 7,
+          "magicDefence": 7
+        },
+        "sourceMethod": "Rogue Chest drops",
+        "sources": [
+          "https://flatmmo.wiki/index.php/Archery",
+          "https://flatmmo.wiki/index.php/Armour"
+        ]
+      }
+    ],
+    "magic": [
+      {
+        "name": "Blue Mage Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": 5,
+        "pieceCount": 5,
+        "setTotalMagicDamage": 7,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Enchantment"
+        ],
+        "craftSkill": "Enchantment",
+        "pieces": [
+          {
+            "slot": "hat",
+            "name": "Blue Mage Hat",
+            "equipLevel": 5,
+            "craftSkill": "Enchantment",
+            "craftLevel": 5,
+            "materials": {
+              "blue_mage_silk": 5,
+              "stardust": 1000,
+              "string": 10
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Blue Mage Top",
+            "equipLevel": 5,
+            "craftSkill": "Enchantment",
+            "craftLevel": 15,
+            "materials": {
+              "blue_mage_silk": 10,
+              "stardust": 2000,
+              "string": 20
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Blue Mage Skirt",
+            "equipLevel": 5,
+            "craftSkill": "Enchantment",
+            "craftLevel": 10,
+            "materials": {
+              "blue_mage_silk": 7,
+              "stardust": 1500,
+              "string": 15
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Blue Mage Gloves",
+            "equipLevel": 5,
+            "craftSkill": "Enchantment",
+            "craftLevel": 3,
+            "materials": {
+              "blue_mage_silk": 3,
+              "stardust": 600,
+              "string": 6
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Blue Mage Boots",
+            "equipLevel": 5,
+            "craftSkill": "Enchantment",
+            "craftLevel": 3,
+            "materials": {
+              "blue_mage_silk": 3,
+              "stardust": 600,
+              "string": 6
+            }
+          }
+        ],
+        "craftLevelRange": [
+          3,
+          15
+        ],
+        "setMaterialTotals": {
+          "blue_mage_silk": 28,
+          "stardust": 5700,
+          "string": 57
+        },
+        "note": "Equip level is a Magic requirement; per-piece craft levels are Enchantment requirements."
+      },
+      {
+        "name": "Red Mage Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": 15,
+        "pieceCount": 5,
+        "setTotalMagicDamage": 12,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Enchantment"
+        ],
+        "craftSkill": "Enchantment",
+        "pieces": [
+          {
+            "slot": "hat",
+            "name": "Red Mage Hat",
+            "equipLevel": 15,
+            "craftSkill": "Enchantment",
+            "craftLevel": 10,
+            "materials": {
+              "blue_mage_hat": 1,
+              "red_mage_silk": 5,
+              "stardust": 2000,
+              "string": 10
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Red Mage Top",
+            "equipLevel": 15,
+            "craftSkill": "Enchantment",
+            "craftLevel": 18,
+            "materials": {
+              "blue_mage_top": 1,
+              "red_mage_silk": 10,
+              "stardust": 4000,
+              "string": 20
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Red Mage Skirt",
+            "equipLevel": 15,
+            "craftSkill": "Enchantment",
+            "craftLevel": 18,
+            "materials": {
+              "blue_mage_skirt": 1,
+              "red_mage_silk": 7,
+              "stardust": 3000,
+              "string": 15
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Red Mage Gloves",
+            "equipLevel": 15,
+            "craftSkill": "Enchantment",
+            "craftLevel": 6,
+            "materials": {
+              "blue_mage_gloves": 1,
+              "red_mage_silk": 3,
+              "stardust": 1200,
+              "string": 6
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Red Mage Boots",
+            "equipLevel": 15,
+            "craftSkill": "Enchantment",
+            "craftLevel": 6,
+            "materials": {
+              "blue_mage_boots": 1,
+              "red_mage_silk": 3,
+              "stardust": 1200,
+              "string": 6
+            }
+          }
+        ],
+        "craftLevelRange": [
+          6,
+          18
+        ],
+        "setMaterialTotals": {
+          "previous_blue_mage_set": 1,
+          "red_mage_silk": 28,
+          "stardust": 11400,
+          "string": 57
+        },
+        "note": "Equip level is a Magic requirement; per-piece craft levels are Enchantment requirements."
+      },
+      {
+        "name": "Druid Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": 35,
+        "pieceCount": 5,
+        "setTotalMagicDamage": 22,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Enchantment"
+        ],
+        "craftSkill": "Enchantment",
+        "pieces": [
+          {
+            "slot": "hat",
+            "name": "Druid Headband",
+            "equipLevel": 35,
+            "craftSkill": "Enchantment",
+            "craftLevel": 18,
+            "materials": {
+              "red_mage_hat": 1,
+              "druid_silk": 5,
+              "stardust": 6000,
+              "string": 30
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Druid Top",
+            "equipLevel": 35,
+            "craftSkill": "Enchantment",
+            "craftLevel": 25,
+            "materials": {
+              "red_mage_top": 1,
+              "druid_silk": 10,
+              "stardust": 12000,
+              "string": 60
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Druid Skirt",
+            "equipLevel": 35,
+            "craftSkill": "Enchantment",
+            "craftLevel": 25,
+            "materials": {
+              "red_mage_skirt": 1,
+              "druid_silk": 7,
+              "stardust": 9000,
+              "string": 45
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Druid Gloves",
+            "equipLevel": 35,
+            "craftSkill": "Enchantment",
+            "craftLevel": 10,
+            "materials": {
+              "red_mage_gloves": 1,
+              "druid_silk": 3,
+              "stardust": 3600,
+              "string": 18
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Druid Boots",
+            "equipLevel": 35,
+            "craftSkill": "Enchantment",
+            "craftLevel": 10,
+            "materials": {
+              "red_mage_boots": 1,
+              "druid_silk": 3,
+              "stardust": 3600,
+              "string": 18
+            }
+          }
+        ],
+        "craftLevelRange": [
+          10,
+          25
+        ],
+        "setMaterialTotals": {
+          "previous_red_mage_set": 1,
+          "druid_silk": 28,
+          "stardust": 34200,
+          "string": 171
+        },
+        "note": "Equip level is a Magic requirement; per-piece craft levels are Enchantment requirements."
+      },
+      {
+        "name": "Desert Mage Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": 55,
+        "pieceCount": 5,
+        "setTotalMagicDamage": 27,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour",
+          "https://flatmmo.wiki/index.php/Enchantment"
+        ],
+        "craftSkill": "Enchantment",
+        "pieces": [
+          {
+            "slot": "hat",
+            "name": "Desert Mage Coif",
+            "equipLevel": 55,
+            "craftSkill": "Enchantment",
+            "craftLevel": 32,
+            "materials": {
+              "druid_headband": 1,
+              "desert_mage_silk": 5,
+              "stardust": 15000,
+              "string": 75
+            }
+          },
+          {
+            "slot": "body",
+            "name": "Desert Mage Top",
+            "equipLevel": 55,
+            "craftSkill": "Enchantment",
+            "craftLevel": 38,
+            "materials": {
+              "druid_top": 1,
+              "desert_mage_silk": 10,
+              "stardust": 30000,
+              "string": 150
+            }
+          },
+          {
+            "slot": "legs",
+            "name": "Desert Mage Skirt",
+            "equipLevel": 55,
+            "craftSkill": "Enchantment",
+            "craftLevel": 38,
+            "materials": {
+              "druid_skirt": 1,
+              "desert_mage_silk": 7,
+              "stardust": 22500,
+              "string": 112
+            }
+          },
+          {
+            "slot": "gloves",
+            "name": "Desert Mage Gloves",
+            "equipLevel": 55,
+            "craftSkill": "Enchantment",
+            "craftLevel": 20,
+            "materials": {
+              "druid_gloves": 1,
+              "desert_mage_silk": 3,
+              "stardust": 9000,
+              "string": 45
+            }
+          },
+          {
+            "slot": "boots",
+            "name": "Desert Mage Boots",
+            "equipLevel": 55,
+            "craftSkill": "Enchantment",
+            "craftLevel": 20,
+            "materials": {
+              "druid_boots": 1,
+              "desert_mage_silk": 3,
+              "stardust": 9000,
+              "string": 45
+            }
+          }
+        ],
+        "craftLevelRange": [
+          20,
+          38
+        ],
+        "setMaterialTotals": {
+          "previous_druid_set": 1,
+          "desert_mage_silk": 28,
+          "stardust": 85500,
+          "string": 427
+        },
+        "note": "Equip level is a Magic requirement; per-piece craft levels are Enchantment requirements."
+      },
+      {
+        "name": "Rogue Mage Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": 70,
+        "pieceCount": 3,
+        "setTotalMagicDamage": 21,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour"
+        ],
+        "sourceMethod": "Rogue Chest drops"
+      },
+      {
+        "name": "Zebeth Armour",
+        "style": "magic",
+        "equipSkill": "Magic",
+        "equipLevel": null,
+        "pieceCount": 2,
+        "setTotalMagicDamage": 16,
+        "sources": [
+          "https://flatmmo.wiki/index.php/Magic",
+          "https://flatmmo.wiki/index.php/Armour"
+        ],
+        "sourceMethod": "source/acquisition not normalized here",
+        "equipLevelStatus": "unknown on current Magic page"
+      }
+    ]
+  },
+  "enchantmentOrbs": [
+    {
+      "name": "Damage Orb 1",
+      "craftSkill": "Enchantment",
+      "craftLevel": 1,
+      "doubleOutputLevel": 20,
+      "tripleOutputLevel": 40,
+      "craftXp": 3,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Mystic Vale",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Grass Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 5,
+      "doubleOutputLevel": 20,
+      "tripleOutputLevel": 35,
+      "craftXp": 6,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Omboko",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Water Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 15,
+      "doubleOutputLevel": 30,
+      "tripleOutputLevel": 45,
+      "craftXp": 9,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Dock Haven",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Fire Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 25,
+      "doubleOutputLevel": 40,
+      "tripleOutputLevel": 65,
+      "craftXp": 12,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Hell",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Damage Orb 2",
+      "craftSkill": "Enchantment",
+      "craftLevel": 30,
+      "doubleOutputLevel": 50,
+      "tripleOutputLevel": 70,
+      "craftXp": 45,
+      "materials": {
+        "unpowered_orb": 1,
+        "stardust": 20
+      },
+      "shrine": "Pirate Isle",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Air Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 35,
+      "doubleOutputLevel": 50,
+      "tripleOutputLevel": 65,
+      "craftXp": 18,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Clouds",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Thorn Leaf Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 42,
+      "doubleOutputLevel": 57,
+      "tripleOutputLevel": null,
+      "craftXp": 75,
+      "materials": {
+        "unpowered_orb": 5,
+        "grass_orb": 25
+      },
+      "shrine": "Omboko",
+      "source": "https://flatmmo.wiki/index.php/Enchantment",
+      "accessNotes": [
+        "Jungle Bundle required for shrine access"
+      ]
+    },
+    {
+      "name": "Earth Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 45,
+      "doubleOutputLevel": 60,
+      "tripleOutputLevel": 77,
+      "craftXp": 27,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Desert",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Damage Orb 3",
+      "craftSkill": "Enchantment",
+      "craftLevel": 50,
+      "doubleOutputLevel": 65,
+      "tripleOutputLevel": 88,
+      "craftXp": 90,
+      "materials": {
+        "unpowered_orb": 1,
+        "stardust": 50
+      },
+      "shrine": "Ghost Mansion",
+      "source": "https://flatmmo.wiki/index.php/Enchantment"
+    },
+    {
+      "name": "Electric Orb",
+      "craftSkill": "Enchantment",
+      "craftLevel": 60,
+      "doubleOutputLevel": 75,
+      "tripleOutputLevel": 90,
+      "craftXp": 60,
+      "materials": {
+        "unpowered_orb": 1
+      },
+      "shrine": "Clouds",
+      "source": "https://flatmmo.wiki/index.php/Enchantment",
+      "accessNotes": [
+        "Let There Be Light 2 access to Clouds",
+        "Storm Scroll/global storm requirement"
+      ]
+    }
+  ],
+  "verificationNotes": [
+    "Current Forging-page scimitar craft levels are used; older scimitar-specific data has disagreed.",
+    "Current Magic page lists Mangrove Staff accuracy as 5; an older normalized snapshot listed 6.",
+    "Dragon weapon requirements shown with question marks on the Melee page are omitted from structured progression rather than guessed.",
+    "Lower-tier spear crafting recipes were not established in this ingestion pass; only explicit current-page recipes are structured.",
+    "Magic armour equip levels and Enchantment crafting levels are different requirements and are represented separately."
+  ]
+}

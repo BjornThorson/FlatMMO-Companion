@@ -1,0 +1,11 @@
+FlatMMO Companion v2.2 — flat replacement upload
+
+Baseline: v2-online, 9a9ed99a7e3b35d190c2b2cae47fb05549a1f232.
+
+Extract this ZIP and upload its files to the root of v2-online, replacing files with the same names. Include ALL THREE companion-*.js files alongside index.html. No manual code edits are needed. Never upload to main.
+
+The existing GitHub Pages workflow is unchanged and is not included in this flat archive. Its branch remains v2-online. No commit, push, PR or deployment was performed while preparing this package.
+
+ARCHITECTURE-v2.2.md explains the changes, evidence boundaries and remaining limitations. conversation-regression.cjs and ui-smoke.cjs are optional developer checks; the website does not load them. PACKAGE-MANIFEST.json records the baseline and SHA-256 of each other packaged file.
+
+Verified: 21 conversation scenarios; 2 DOM-stub integration scenarios; JSON/text/HTML grounding equality; data preservation. Visual browser verification remains outstanding because the environment's browser download timed out.

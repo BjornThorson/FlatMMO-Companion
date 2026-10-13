@@ -1,0 +1,20 @@
+FlatMMO Companion v0.5 patch
+
+Files:
+- cloudflare-worker/SRC/index.js
+- flatmmo-acquisition-rules.json
+- flatmmo-game.json
+
+What changed:
+- Random pickpocket and monster-drop sources no longer imply a guaranteed target item.
+- find_item_sources now returns chance context and other documented outcomes.
+- get_source_loot can return a Farmer/NPC pickpocket table or monster loot table.
+- Known 1/N odds are reported when present; unknown odds stay unknown.
+- Pickpocket action success is kept separate from the target item's drop chance.
+- Monster drops distinguish Always (1/1) from chance-based entries.
+- Added sourced game description, official links, Discord guidance, and structured official rules.
+- Added get_game_info and get_game_rules tools.
+- search_rules now also searches acquisition semantics and official conduct rules.
+
+Upload all three files to v2-online, preserving their paths.
+The GitHub Actions workflow should deploy the Worker automatically after commit.

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-09-21",
+  "release": "ai-grounding-v0.5",
+  "purpose": "Sourced top-level FlatMMO description, official links, community guidance, and official code-of-conduct summaries.",
+  "description": {
+    "summary": "FlatMMO is a browser-based multiplayer game developed by Smitty, built around skill training, gathering and production, combat, quests, achievements, trading, and exploration.",
+    "currentSnapshot": {
+      "skills": 18,
+      "wikiNotes": "The community wiki currently describes 18 skills, 250+ achievements, 20+ quests, and 125 unique enemies."
+    },
+    "sources": [
+      "https://flatmmo.com/",
+      "https://flatmmo.wiki/index.php/Main_Page"
+    ]
+  },
+  "officialLinks": {
+    "game": "https://flatmmo.com/",
+    "rules": "https://flatmmo.com/rules.php",
+    "wiki": "https://flatmmo.wiki/",
+    "discord": {
+      "url": "https://discord.gg/79t3w4c",
+      "discovery": "The official FlatMMO site and the game window expose a Discord link.",
+      "preferredUserGuidance": "For the current invite, use the Discord link in the FlatMMO game window or on the official site, since invite URLs can change."
+    }
+  },
+  "communityGuidance": [
+    "For current community help, questions not covered by the Companion's source material, or rapidly changing game information, suggest joining the official FlatMMO Discord using the Discord link in the game window or official site.",
+    "Do not present Discord/community answers as authoritative game mechanics unless they are subsequently verified against an appropriate source."
+  ],
+  "codeOfConduct": [
+    {
+      "id": "conduct.no_botting",
+      "name": "No Botting or Automation",
+      "summary": "Players must control their characters manually on the main game. Auto-clickers and gameplay automation are prohibited; the official rules note a separate botting server exception."
+    },
+    {
+      "id": "conduct.alt_trading",
+      "name": "Alt Trading / Multiple Accounts",
+      "summary": "Multiple accounts may be played, but trading between a player's own accounts is prohibited on the main game; the official rules note a botting-server exception."
+    },
+    {
+      "id": "conduct.third_party_tools",
+      "name": "Third-Party Tools & Addons",
+      "summary": "Non-automating quality-of-life tools are allowed. Tools that play the game or automate inputs are not allowed."
+    },
+    {
+      "id": "conduct.rmt",
+      "name": "No Real-Money Trading",
+      "summary": "Buying or selling in-game items, accounts, or characters for real-world money is prohibited."
+    },
+    {
+      "id": "conduct.exploits",
+      "name": "No Exploiting Bugs or Glitches",
+      "summary": "Players must not abuse bugs, glitches, or unintended mechanics and should report exploits to the development team."
+    },
+    {
+      "id": "conduct.referrals",
+      "name": "No Referral-System Abuse",
+      "summary": "Abusing referral links with alternate accounts is prohibited."
+    },
+    {
+      "id": "conduct.respect",
+      "name": "Be Respectful",
+      "summary": "Harassment, bullying, slurs, hate speech, and personal threats are prohibited."
+    },
+    {
+      "id": "conduct.profanity",
+      "name": "No Excessive Profanity",
+      "summary": "Occasional profanity is permitted, but targeted offensive language and excessive public-channel profanity are prohibited."
+    },
+    {
+      "id": "conduct.impersonation",
+      "name": "No Impersonation",
+      "summary": "Players must not impersonate another player, moderator, or staff member."
+    },
+    {
+      "id": "conduct.spam_advertising",
+      "name": "No Spamming or Advertising",
+      "summary": "Excessive messages and promotion of other games, websites, or services are prohibited."
+    },
+    {
+      "id": "conduct.account_security",
+      "name": "Account Security",
+      "summary": "Players are responsible for their accounts and should not share credentials."
+    }
+  ],
+  "sources": {
+    "officialGame": "https://flatmmo.com/",
+    "officialRules": "https://flatmmo.com/rules.php",
+    "communityWiki": "https://flatmmo.wiki/index.php/Main_Page",
+    "stealing": "https://flatmmo.wiki/index.php/Stealing",
+    "monsters": "https://flatmmo.wiki/index.php/Monsters"
+  }
+}

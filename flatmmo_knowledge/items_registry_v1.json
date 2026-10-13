@@ -1,0 +1,4660 @@
+{
+  "schema_version": 1,
+  "source": {
+    "endpoint": "https://flatmmo.com/api/db/items.php",
+    "retrieval": "user-provided official endpoint export",
+    "raw_entry_count": 936
+  },
+  "items": [
+    {
+      "id": "silver_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dotted_green_leaf",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_mushroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_shrimp",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_cake",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cake",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_cake",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coconut",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_crab_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_crab_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_rat_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_chicken",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_anchovy",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_sardine",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sardine_sushi",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lobster_sushi",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shark_sushi",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "octopus_sushi",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_tuna",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_piranha",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_lava_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_arctic_cod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_three_eyed_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "deep_jungle_map",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "barbed_wire",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thick_barbed_wire",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_shrimp",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_notes",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_anchovy",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_sardine",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_tuna",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_piranha",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_lava_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_arctic_cod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_blue_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_blue_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_shark",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_octopus",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_octopus",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_anglerfish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_shark",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_anglerfish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_three_eyed_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "stardust",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_silk",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_hat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_skirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mage_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_silk",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_silk",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_silk",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_headband",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "paydirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pure_gold_nugget",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "conveyor_furnace_pump",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "zebeth_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "zebeth_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_coif",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_skirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_mage_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "unpowered_orb_crate",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rockshroom_crate",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_skirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "druid_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_hat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_skirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mage_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mushroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "empty_bird_feed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bird_feed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "leafy_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grass_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grass_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grass_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragon_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "clay_secateurs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "secateurs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "meteor_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "omboko_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "beanstalk_seed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "storm_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "soaked_beanstalk_seed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "omboko_axe_head",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "flippers",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hot_golem_rock",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oxygen_tank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "spicy_tuna",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "volcky_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crab_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shamen_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shamen_mask_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "monkey_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "zebeth_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "firemake_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "warroot_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ent_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fed_mining_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mining_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raccoon_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "diamond_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "untradable_bronze_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "untradable_silver_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "untradable_gold_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "untradable_diamond_premium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_ears",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "seagull_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "baby_deranged_mage_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "baby_ghostly_deranged_mage_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_spirit_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "forest_spirit_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "straw_hat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_spirit_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "storm_spirit_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "flufflare_pet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "clay",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pie_tin",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pearl_1",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "beer",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wine",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hard_liquor",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "premium_beer",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_beer",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_premium_beer",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "beer_mug",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wine_bottle",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hard_liquor_bottle",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "barley_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "barley",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wine_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermenting_barrel",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermenting_wine_barrel",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "clay_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermenting_kelp_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermented_kelp_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermented_wine_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermented_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermenting_desert_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fermented_desert_barrel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "melee_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_recoil_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_melee_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_archery_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_magic_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_worship_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_blessed_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_combat_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_stamina_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_tier_5",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_tier_10",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_tier_15",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_tier_20",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "farmers_bundle",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bundle_tier_25",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_melee_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_archery_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_magic_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_sandsmelt_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crystal_shard",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_enchantment_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_farming_speed_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_stardust_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_birdnest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "poison_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "freeze_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key1",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key2",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key3",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key4",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key5",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key6",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key7",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_apple_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_prism",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_ghost_pepper_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_dragonfruit_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_pear_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_avocado_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_banana_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_pineapple_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_coconut_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "uncooked_starfruit_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coconut_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coconut_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coconut_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "phantos_mansion_enterance_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coconut_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit_pie",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit_pie_good",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit_pie_great",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit_pie_perfect",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key8",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "air_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "invisibility_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grass_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "reflect_badge",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_emblem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_emblem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "reflect_emblem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bamboo",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "soft_clay_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "greenhouse_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "phantos_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "chefs_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thieves_ink",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rusty_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cleaned_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "atlas_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "phantos_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "greenhouse_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "chefs_house_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thieves_hideout_teleport_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "paper",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "teleport_scroll_book",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "teleport_scrolls_book",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "black_pearl_teleport_scrolls_book",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bond",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_knife",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_berries",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hot_berries",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ice_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wind_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lightning_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lava_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rock_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thorn_leaf_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "scorpions_tail",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wooden_heart_pattern",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wooden_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pine_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oak_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bamboo_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "willow_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_wooden_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_oak_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_pine_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_willow_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_mangrove_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_cactus_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_bamboo_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sacred_magic_heart",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "unpowered_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_knife",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lime_leaf_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grape_vine_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grapes",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lantern",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lit_lantern",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_knife",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_treasure_chest_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sapphire_gold_treasure_chest_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "emerald_gold_treasure_chest_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ruby_gold_treasure_chest_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "diamond_gold_treasure_chest_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rusty_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "melee_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "archery_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "defence_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "accuracy_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "archery_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_antidote_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_antidote_potion_plus",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "anti_venom_sample",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bread",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "doll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_doll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oak_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lightning_rod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "willow_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "maple_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_promethium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "flaming_promethium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_titanium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "flaming_titanium_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_ancient_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "flaming_ancient_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mystic_gemstone",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sand_gemstone",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sand_fragment",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "jungle_fragment",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mystic_fragment",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "jungle_gemstone",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_mushroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_arrows",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lime_leaf",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dotted_green_leaf_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_knife",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_scimitar_blade",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_knife",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_trident",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_promethium_trident",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_knife",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_knife",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragon_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_spear_tip",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_spear_tip",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_spear_tip",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "scimitar_handle",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_temple_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_spear",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pumpkin_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rake",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bunny_ears",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "white_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "machete",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "yellow_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pink_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_partyhat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tears_of_the_desert_relic",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tears_of_the_dodging_master",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tears_of_the_mad_priest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_leaf",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crystal_leaf",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cantari_book",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gunpowder",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tnt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bait",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_bait",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cave_bait",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_arrow_heads",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "feathers",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "chefs_hat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wheat_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coins",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "everbrook_farming_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mystic_vale_farming_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "omboko_farming_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "greenhouse_farming_scroll",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thieves_hood",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "melee_hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "archery_hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "possessed_hunting_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shiny_glass_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shiny_boss_glass_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hunters_feather",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "possessed_hunters_feather",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sand",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "glass",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_head",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "air_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "grass_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "frozen_bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ashes",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "demon_bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mining_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "firecook_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oven_ashes",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oven_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "orebar_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "woodcutting_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "birdnest_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fishing_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bonecrusher",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pyro_matches",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pyro_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "soaked_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "air_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_totem",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_island_pass",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "air_pages",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "air_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_totem_completed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_leaf_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oak_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "willow_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blessed_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "train_track_schematics",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "train_track",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bloody_staff_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "zebeth_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ant_remains_fishing_shop",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ant_remains_bank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ant_remains_general_store",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ant_remains_farmers",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "queen_ant_remains",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "forming_gem_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_seaweed_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "holy_symbol_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "jiggy_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "desert_beetle_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bat_wing_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "soaked_bat_wing_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "heal_bat_wing_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_bat_wing_artifact",
+      "source_occurrences": 2,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "meteor_fragment_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "alien_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "anglerfish_esca_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bamboo_strip",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snake_rattle_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shrimp_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "worm_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sandfish_remains_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "goblin_toenails_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "strange_leaf_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gem_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bird_remains_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gorilla_foot_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "leaf_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crab_remains_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "demon_horn_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_jaw_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "seaweed_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lobster_fossil_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_skin_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_ashes_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blessed_staff",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "maple_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "valebark",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_bow",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_leaf",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragon_scimitar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragon_mace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snakeskin_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_pickaxe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_mushroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_head",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "electric_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_leaf_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crystal_leaf_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "arrow_shafts",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bear_fur_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wolf_fur_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "giant_bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mummified_bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ogre_bones",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mirror",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "miners_gem_beads_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_miners_gem_beads_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_gem_beads_necklace_string",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "edible_gold_nuggets",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "prospector_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "prospector_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "prospector_pants",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lions_packsack_fur",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "polar_bears_packsack_fur",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "swordfish_packsack_skin",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ice_block",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lions_packsack",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "polar_bears_packsack",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "swordfish_packsack",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mummified_skull",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "yellow_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "scrap_metal",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magnet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_cannon_piece",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "granite_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "granite_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "graphite",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "graphite_bucket",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "lava_bucket",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "stone_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "earth_orb",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bread_dough",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "spirit_mushroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "spirit_energy",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mushroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rockshroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "moldshroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fireshroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "seashroom",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_axe",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bonemeal",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "spirit_mushroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "master_ring_mould",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "master_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "black_pearl_master_ring",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_hp_regen_potion",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_mushroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "birdnest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "warroot_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "apple_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "dragonfruit_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pear_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "banana_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "avocado_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pineapple_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "palm_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_pepper_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "starfruit_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oak_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "depleted_soil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "willow_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "maple_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pine_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_tree_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "seashroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "moldshroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fireshroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rockshroom_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bronze_bar",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "milk_bucket",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oak_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "willow_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "maple_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "moss",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_pole",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "haunted_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pine_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "magic_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blessed_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "string",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_string",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_hide",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_baby_hide",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "wheat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sugarcane",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "nethergrass",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bucket",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "water_bucket",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "vial",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "large_vial",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "huge_vial",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_pork",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_bacon",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_steak",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_chicken",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "raw_rat_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_steak",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_pork",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cooked_bacon",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "baby_thief_portrait",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "nessie_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "nessie_fishing_rod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "harpoon",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thick_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thickest_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_harpoon",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_thick_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_thickest_fishing_net",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fishing_rod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_fishing_rod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fishing_cage",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_fishing_cage",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "shovel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hell_shovel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "coal",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "phantos_deranged_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "deranged_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "deranged_mage_key",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "copper",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "iron",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silver",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "woodchips",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "charcoal",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "promethium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "titanium",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ancient_ore",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "matches",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tiger_fur_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_hides",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "crocodile_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_archer_hood",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_archer_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_archer_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_mage_hood",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_mage_top",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_mage_skirt",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_warrior_helmet",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_warrior_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rogue_warrior_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silkfang_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_mask",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_body",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_legs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_boots",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "noctyrix_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "thieves_artifact",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damage_orb_1",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damage_orb_2",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damage_orb_3",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damage_orb_4",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "silent_gloves",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "farming_plans",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "farming_plans_stamped",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "stardust_seeds",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "slime_oil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hell_slime_oil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "algae",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "rotten_logs",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mold_rock",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cactus_plank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "oiled_cactus_plank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "maple_plank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mangrove_plank",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "nails",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "test_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "demonic_sword",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "demonic_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sapphire_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "emerald_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ruby_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "diamond_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "black_pearl_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damaged_sapphire_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damaged_emerald_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damaged_ruby_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "damaged_diamond_necklace",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "sapphire",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "emerald",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ruby",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "diamond",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "black_pearl",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cut_sapphire",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cut_emerald",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cut_ruby",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cut_diamond",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cut_black_pearl",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "enchanted_sapphire",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "enchanted_emerald",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "enchanted_ruby",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "enchanted_diamond",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "enchanted_black_pearl",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pumpkin_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "yellow_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "white_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "tree_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snowflake_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "snowman_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "spider_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "skull_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "santa_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pink_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ghost_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gift_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "easter_egg_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "candy_cane_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "cat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "carrot_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bunny_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "blue_party_hat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "basket_egg_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "basket_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "chocolate_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "zombie_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "reindeer_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hatching_chicken_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mummy_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fancy_bell_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bell_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "mad_bunny_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "faradox_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hardcore_faradox_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "hardcore_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "fire_poker",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "gold_fire_poker",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "osaat_configuration",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "osaat_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "bankless_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "one_life_sigil",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_anchovy",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_shark",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_anglerfish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_blue_lobster",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "seaweed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "high_quality_seaweed",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_piranha",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_lava_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_arctic_cod",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_bread",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_cake",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_chicken",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_crab_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_eel",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_rat_meat",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_sardine",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_octopus",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_shrimp",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_steak",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_pork",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_bacon",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_three_eyed_fish",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "burnt_tuna",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "chicken_egg",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "club",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ogre_club",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ice_ogre_club",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "scimitar_assembly_notes",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "achievements_book",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "treasure_map",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "treasure_chest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_treasure_chest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "pirates_gold",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_treasure_map_quest",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "green_treasure_map",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "red_treasure_map",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    },
+    {
+      "id": "ripped_treasure_map",
+      "source_occurrences": 1,
+      "properties_status": "unverified"
+    }
+  ],
+  "duplicate_identifiers": {
+    "raw_anchovy": 2,
+    "fermenting_barrel": 2,
+    "fermenting_wine_barrel": 2,
+    "iron_knife": 2,
+    "silver_knife": 2,
+    "gold_knife": 2,
+    "bronze_knife": 2,
+    "fire_bat_wing_artifact": 2
+  }
+}
