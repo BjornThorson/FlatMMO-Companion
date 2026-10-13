@@ -1,0 +1,172 @@
+{
+  "release": "conversation-kernel-v2.2",
+  "baselineBranch": "v2-online",
+  "baselineCommit": "9a9ed99a7e3b35d190c2b2cae47fb05549a1f232",
+  "githubMutated": false,
+  "knowledgeFilesByteIdentical": [
+    "items",
+    "graph",
+    "equipment",
+    "skills",
+    "monsters",
+    "quests",
+    "areas",
+    "mechanics",
+    "rules",
+    "overrides",
+    "sources"
+  ],
+  "validation": {
+    "conversationScenarios": 21,
+    "domStubScenarios": 2,
+    "visualBrowser": "not completed: Chromium download timed out",
+    "groundingCopies": "JSON/text/HTML equal"
+  },
+  "files": [
+    {
+      "name": "AI_TEST_PROMPTS.md",
+      "sha256": "a802ea6b9210ea3d10e4fae9a03fff0ec15303650c86aa878c6939a8437e36e7",
+      "bytes": 32383
+    },
+    {
+      "name": "ARCHITECTURE-v2.2.md",
+      "sha256": "78c3138344bddf005df73c46bd358e5cfd68e6f76fff8bab34003f6c7957c11a",
+      "bytes": 6128
+    },
+    {
+      "name": "README.md",
+      "sha256": "ba9d11f574c41d570302826860cb70562e94954975ed6407abecfa25947414b9",
+      "bytes": 15905
+    },
+    {
+      "name": "UPLOAD-v2.2.txt",
+      "sha256": "dc538bf10cb8e64ed77ce90c4b4eeaaac1d1d81b88f151ae5fb692428b798f58",
+      "bytes": 1043
+    },
+    {
+      "name": "ai.html",
+      "sha256": "eefd1a79b0504c6361c9d6d0cad6947cc6942d33da860b5d7afa2c17e746fe3c",
+      "bytes": 1296062
+    },
+    {
+      "name": "companion-conversation.js",
+      "sha256": "d5f885b7263a667237421b34bc844cfbefc2bfbb9ee534bed58461be630c67dc",
+      "bytes": 26961
+    },
+    {
+      "name": "companion-engine.js",
+      "sha256": "78c6d7f768902ac8612fc79a1f7211a68cd57d5ff77a9f4c31c93cab2137fb84",
+      "bytes": 153831
+    },
+    {
+      "name": "companion-ui.js",
+      "sha256": "5f3ed725b278d16ecaaaf490950d8cf47e7e4eb3959f0eda933a9c418e8408e9",
+      "bytes": 1837
+    },
+    {
+      "name": "conversation-regression.cjs",
+      "sha256": "42e8e3f7bef157df12b32ecaedcdcc3ebf7eb74e3c8c888e3937daec4af34772",
+      "bytes": 7771
+    },
+    {
+      "name": "flatmmo-areas.json",
+      "sha256": "bec51c4d9dabfb98015144c0efa193f5a512797dfe3ac50e9b3c5f23ae525ebc",
+      "bytes": 303598
+    },
+    {
+      "name": "flatmmo-context.json",
+      "sha256": "3dd6024e7a21b49f374de2c9cba6ec1d9818a4c4847ad0790cfcbc47aa3f558b",
+      "bytes": 1292680
+    },
+    {
+      "name": "flatmmo-context.txt",
+      "sha256": "07ab2df4035d76c4e7cdbc552a6238a21542d83b6b7f1667d52d97f66900c28b",
+      "bytes": 1294870
+    },
+    {
+      "name": "flatmmo-equipment.json",
+      "sha256": "2a2097c08d3d923402406ae4b6c98ecc374d87054faf6e6e34058b3affe4eaa7",
+      "bytes": 86729
+    },
+    {
+      "name": "flatmmo-graph.json",
+      "sha256": "60aa3616a43279b2f65d307474dab35e7378cf5c98ac9f8c08867c1a0386ff1c",
+      "bytes": 2249199
+    },
+    {
+      "name": "flatmmo-items.json",
+      "sha256": "50b7e8379e83950811c8f1d5e225a7d75ad8fd7bdd6710be0ca39ac366bfbfc8",
+      "bytes": 709076
+    },
+    {
+      "name": "flatmmo-language.json",
+      "sha256": "fd31e1d792e9bb7b22637b60cb1aeb60f1094befef3f824773d08db081cf3824",
+      "bytes": 35498
+    },
+    {
+      "name": "flatmmo-mechanics.json",
+      "sha256": "0db35d9094aeb73e7dcc9b6acccdb66666f8197ec4f30a24d7bdc779c44797c1",
+      "bytes": 4547
+    },
+    {
+      "name": "flatmmo-monsters.json",
+      "sha256": "6410357cf911bd454ffb550d588ceb046db8c88a17481a6ae23d9b4fd47fb09d",
+      "bytes": 116413
+    },
+    {
+      "name": "flatmmo-overrides.json",
+      "sha256": "a34365ca574cbe18195e07210f7304e32ea4f0f1fc64de19d96178e6e4c44f52",
+      "bytes": 1776
+    },
+    {
+      "name": "flatmmo-quests.json",
+      "sha256": "6b7238386587dfad777b5b13de15ceb65586dfc33af7648750ce27e88fce75f1",
+      "bytes": 66815
+    },
+    {
+      "name": "flatmmo-rules.json",
+      "sha256": "6bac8f0e8d2c6239ee2e617f54039ac1e09d38bc336662c8c4ba59f22ee9e4f4",
+      "bytes": 11671
+    },
+    {
+      "name": "flatmmo-skills.json",
+      "sha256": "e2d65abd24d130e08b5efcd83a684e0eb2f285c1eee4ffb81c5b77942b3040d6",
+      "bytes": 12802
+    },
+    {
+      "name": "flatmmo-sources.json",
+      "sha256": "e1b46c607fec3241451afe274afce482d54b53c02a8d75acdce62213eed62a7f",
+      "bytes": 16595
+    },
+    {
+      "name": "flatmmo-status.json",
+      "sha256": "324d91272e4299b0979df8d95c57faad3e2fbdfd85152f29e583d503b83cb3a8",
+      "bytes": 19631
+    },
+    {
+      "name": "index.html",
+      "sha256": "51436cb8f2c11e638ec258fa062905015fbb8d633bf6dc11c7f10d9d3ea50d52",
+      "bytes": 13162
+    },
+    {
+      "name": "llms.txt",
+      "sha256": "86d25b7c59a3d47d94cdfac554a2f45c5bfa848d5387067833153f1186ca55ee",
+      "bytes": 2883
+    },
+    {
+      "name": "robots.txt",
+      "sha256": "4a32cc063bbe7fda1823810dcef515a7fd460360bdf920450436124adfc8838b",
+      "bytes": 227
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "eb2030d48ae0171b4b9a6cf2d7a76afe90867361edf6aa2eb0f0162d0489a0b6",
+      "bytes": 2266
+    },
+    {
+      "name": "ui-smoke.cjs",
+      "sha256": "0bdfb62e7b95897698df41435d56c6559f17167c6c628203f727881664157587",
+      "bytes": 2329
+    }
+  ]
+}

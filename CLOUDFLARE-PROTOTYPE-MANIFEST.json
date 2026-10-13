@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "release": "public-ai-access-v0.6",
+  "generated": "2026-09-21",
+  "targetRepository": "etherealaporia-alt/FlatMMO-Companion",
+  "targetBranch": "v2-online",
+  "cloudflareRootDirectory": "cloudflare-worker",
+  "workerName": "flatmmo-ai-prototype",
+  "model": "@cf/zai-org/glm-4.7-flash",
+  "security": "Public requests require no shared credential and are rate-limited. PROTOTYPE_TOKEN is optional and reserved for admin/debug bypass.",
+  "publicRateLimits": {
+    "anonymousClientPerMinute": 12,
+    "aggregateIpPerMinute": 120
+  },
+  "files": [
+    {
+      "path": "CLOUDFLARE-GITHUB-SETUP.md",
+      "bytes": 2666,
+      "sha256": "8db9b00e162cf3df1d2eff0d2f39bd02ce2ce2b291c89a7239dc2fb1b04d4a27"
+    },
+    {
+      "path": "ai-prototype.html",
+      "bytes": 3806,
+      "sha256": "2c25b5ae4428b745d7c5b196a84d6c57187ccb5f275550d11af99892c0038a28"
+    },
+    {
+      "path": "cloudflare-worker/SRC/index.js",
+      "bytes": 40375,
+      "sha256": "5f20cc1dceb648b871463ed68aa9dc5edbfff906a75968075742f27d9bf73478"
+    },
+    {
+      "path": "cloudflare-worker/wrangler.jsonc",
+      "bytes": 668,
+      "sha256": "13279f71b423858ea9a8a6c61175195f2eafb25b7b039931a9d82549954a46fc"
+    }
+  ]
+}

@@ -1,10 +1,6 @@
+# GitHub Pages project-site copy.
+# Host-level crawler policy is controlled by https://etherealaporia-alt.github.io/robots.txt
 User-agent: *
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://etherealaporia-alt.github.io/FlatMMO-Companion/sitemap.xml

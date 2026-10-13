@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-09-21",
+  "release": "ai-grounding-v0.5",
+  "purpose": "Explicit semantics for chance-based FlatMMO acquisition sources so a listed source is never mistaken for a guaranteed outcome.",
+  "rules": [
+    {
+      "id": "acquisition.pickpocket.random_drops",
+      "name": "Pickpocket success and item drops are separate",
+      "status": "verified_rule",
+      "appliesTo": [
+        "pickpocket"
+      ],
+      "facts": [
+        "Pickpocketing NPCs gives random item drops.",
+        "An NPC pickpocket attempt has its own success chance.",
+        "The item table has separate rarity odds for individual drops.",
+        "A successful pickpocket does not imply that a particular non-1/1 item will be received.",
+        "The current documented rarity mapping is Very Common 1/1, Common 1/10, Uncommon 1/100, Rare 1/1000, and Very Rare 1/10000."
+      ],
+      "notes": [
+        "Do not multiply an item drop chance by a pickpocket success chance unless the current success chance for that player is also known.",
+        "When describing a target item, mention that other documented drops may also occur. Do not assume loot entries are mutually exclusive unless that mechanic is explicitly documented."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Stealing"
+      ]
+    },
+    {
+      "id": "acquisition.monster.loot_table",
+      "name": "Monster loot tables are probabilistic per item",
+      "status": "verified_rule",
+      "appliesTo": [
+        "monster_drop"
+      ],
+      "facts": [
+        "Monster loot tables list an amount and rarity for each item.",
+        "A rarity of 1/1 is shown as Always and is guaranteed for that monster kill.",
+        "A rarity with a denominator greater than 1 is chance-based and must not be described as guaranteed."
+      ],
+      "notes": [
+        "Different loot-table entries are not assumed to be mutually exclusive.",
+        "When discussing a target drop, other documented drops from that monster may be useful context."
+      ],
+      "sources": [
+        "https://flatmmo.wiki/index.php/Monsters"
+      ]
+    }
+  ]
+}

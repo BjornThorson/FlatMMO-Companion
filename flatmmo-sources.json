@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 4,
+  "generated": "2026-09-20",
+  "permissionContext": {
+    "wiki": "Liam/Dounford explicitly approved caching wiki data for the described public AI-companion use, with polite update checking rather than bot-like repeated fetching.",
+    "updateCadence": "Daily recentchanges check approved; query only the interval since the last successful check.",
+    "officialMonsterEndpoint": "Public endpoint linked by Liam; bootstrap copy here uses the Wiki-Extras mirror because the current execution environment cannot resolve flatmmo.com directly."
+  },
+  "records": [
+    {
+      "id": "official.monsters",
+      "authority": "official",
+      "url": "https://flatmmo.com/data/monsters.json",
+      "usage": "canonical monster dataset",
+      "bootstrapStatus": "mirrored snapshot used; live refresh required"
+    },
+    {
+      "id": "community.wiki_extras_monster_mirror",
+      "authority": "community_verified_mirror",
+      "url": "https://github.com/Dounford-Felipe/FlatMMO-Wiki-Extras/blob/main/dbUpdater/enemies_db.lua",
+      "license": "MIT",
+      "commit": "f9e163380f6c61c6c281c60cc580c34328f774ff",
+      "usage": "bootstrap only"
+    },
+    {
+      "id": "wiki.quests",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Quests",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.melee",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Melee",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-15",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.archery",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Archery",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-15",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.magic",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Magic",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-15",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.health",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Health",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.hunting",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Hunting",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.worship",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Worship",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.mining",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Mining",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.forging",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Forging",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.crafting",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Crafting",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.enchantment",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Enchantment",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.fishing",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Fishing",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.farming",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Farming",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.woodcutting",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Woodcutting",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.firemake",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Firemake",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.cooking",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Cooking",
+      "usage": "normalized facts/procedures",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.brewing",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Brewing",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.stealing",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Stealing",
+      "usage": "normalized facts/procedures",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.agility",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Agility",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.achievement",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Achievement",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.coins",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Coins",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.trading",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Trading",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.sleep_points",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Sleep_Points",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.armour",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Armour",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-15",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.tools",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Tools",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.monsters",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Monsters",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.fermenting",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Fermenting",
+      "usage": "deep normalized facts/procedures/progression",
+      "lastChecked": "2026-09-15",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.treasure_maps",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Treasure_Maps",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.bundles",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Bundles",
+      "usage": "normalized facts/procedures",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.sigils",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Sigils",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.shops",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Shops",
+      "usage": "normalized facts/procedures",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.pets",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Pets",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.hardcore",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Hardcore",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.minigames",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Minigames",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.levels",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Levels",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.gems",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Gems",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.spirits",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Spirits",
+      "usage": "normalized facts/procedures",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition/use normalization plus existing domain normalization"
+    },
+    {
+      "id": "wiki.archeology",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Archeology",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.everbrook",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Everbrook",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.ghost_mansion",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Ghost_Mansion",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.mystic_vale",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Mystic_Vale",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.beach",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Beach",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.thieves_hideout",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Thieves_Hideout",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.hell",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Hell",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.omboko",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Omboko",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.sewer",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Sewer",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.pirate_isle",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Pirate_Isle",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.frostvale",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Frostvale",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.desert",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Desert",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "partial rendered/search normalization due interstitial"
+    },
+    {
+      "id": "wiki.volcano",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Volcano",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.dock_haven",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Dock_Haven",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.atlas",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Atlas",
+      "usage": "area/room/NPC/service/world-navigation normalization",
+      "lastChecked": "2026-09-16",
+      "ingestion": "full-rendered-page normalization"
+    },
+    {
+      "id": "wiki.swords",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Swords",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.arrows",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Arrows",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.necklaces",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Necklaces",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.hats",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Hats",
+      "usage": "normalized facts/procedures"
+    },
+    {
+      "id": "wiki.community_events",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Community_Events",
+      "usage": "item reward pools for community events",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition normalization"
+    },
+    {
+      "id": "wiki.badges",
+      "authority": "community_verified",
+      "url": "https://flatmmo.wiki/index.php/Badges",
+      "usage": "badge acquisition methods where not already represented by stronger item-specific sources",
+      "lastChecked": "2026-09-20",
+      "ingestion": "item-centric acquisition normalization"
+    }
+  ],
+  "ingestionNote": "v1.8 adds a first-class item/acquisition graph. Explicit item rows are normalized across existing structured data plus Shops, Stealing, Farming, Brewing, Cooking, Enchantment, Spirits, Community Events, Bundles and Badges. Unknown values remain unknown.",
+  "derivedRelationshipPolicy": {
+    "authority": "derived",
+    "basis": "v1.3 cross-links are deterministic joins across the already sourced v1.2 world model, quest procedures, and monster records.",
+    "noNewExternalFactClaim": "A relationship marked derived does not claim a new independently sourced game fact; it points between existing sourced records.",
+    "conflictHandling": "Broad monster-area labels and more specific room-page evidence are both preserved when they disagree."
+  }
+}

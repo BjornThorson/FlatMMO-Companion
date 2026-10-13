@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-09-19",
+  "purpose": "Additive records observed in the live game but not yet present in the normalized core files. These are deliberately conservative and do not invent undocumented procedures or rewards.",
+  "quests": [
+    {
+      "id": "quest.feeding_the_homeless",
+      "name": "Feeding The Homeless",
+      "difficulty": "Easy",
+      "locations": [],
+      "requirements": [
+        "No skill level requirements"
+      ],
+      "rewards": [],
+      "procedure": [],
+      "source": "live-game-observation",
+      "procedureGraph": [],
+      "linkCoverage": {
+        "steps": 0,
+        "roomLinkedSteps": 0,
+        "npcLinkedSteps": 0,
+        "areaOnlySteps": 0
+      },
+      "procedureStatus": "pending-player-mapping",
+      "verificationNote": "Live game UI confirms the quest exists and states that it has no skill level requirements. Homeless Ted was directly observed beside a furnace. Remembered bread/reward details remain intentionally unstructured until replayed and verified."
+    },
+    {
+      "id": "quest.atlas_crown",
+      "name": "Atlas Crown",
+      "difficulty": "Medium",
+      "locations": [
+        "Atlas"
+      ],
+      "requirements": [
+        "Level 40 Mining",
+        "Level 50 Crafting"
+      ],
+      "rewards": [],
+      "procedure": [],
+      "source": "live-game-observation",
+      "procedureGraph": [],
+      "linkCoverage": {
+        "steps": 0,
+        "roomLinkedSteps": 0,
+        "npcLinkedSteps": 0,
+        "areaOnlySteps": 0
+      },
+      "procedureStatus": "pending-player-mapping",
+      "verificationNote": "Live game UI confirms Mining 40 and Crafting 50 requirements. King Atlas was shown at the quest location. Procedure and reward are not yet documented."
+    }
+  ]
+}

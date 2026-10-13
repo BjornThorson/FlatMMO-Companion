@@ -1,0 +1,19 @@
+FlatMMO Companion public AI access patch v0.6
+
+Upload/replace these files on v2-online, preserving paths:
+- ai-prototype.html
+- cloudflare-worker/SRC/index.js
+- cloudflare-worker/wrangler.jsonc
+- CLOUDFLARE-GITHUB-SETUP.md
+- CLOUDFLARE-PROTOTYPE-MANIFEST.json
+
+What changes:
+- Players no longer enter a Worker URL or shared token.
+- The public page calls the known Worker directly.
+- A random anonymous browser ID is used for a 12 requests/minute rate limit.
+- A 120 requests/minute per-IP aggregate limit is a backstop.
+- Existing PROTOTYPE_TOKEN remains optional for admin/debug bypass.
+- Public users cannot request tool traces.
+- Old prototype credentials are deleted from the browser's localStorage when the page loads.
+
+No secret values are included in this package.
