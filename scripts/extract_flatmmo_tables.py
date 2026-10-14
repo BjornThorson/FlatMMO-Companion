@@ -36,11 +36,14 @@ class TableParser(HTMLParser):
             elif tag == "tr" and self.row is None:
                 self.row = []
             elif tag in ("td", "th") and self.row is not None and self.cell is None:
-                self.cell = {"kind": tag, "text": [], "links": []}
+                self.cell = {"kind": tag, "text": [], "links": [], "images": [], "attributes": {k: v[:300] for k, v in attrs if k in ("title", "data-id", "data-item-id", "data-tooltip", "aria-label") and v}}
             elif tag == "a" and self.cell is not None:
                 href = dict(attrs).get("href")
                 if href:
                     self.cell["links"].append(href[:300])
+            elif tag == "img" and self.cell is not None:
+                a = dict(attrs)
+                self.cell["images"].append({k: a[k][:400] for k in ("src", "data-src", "alt", "title", "data-id", "data-item-id", "data-tooltip", "aria-label") if a.get(k)})
             elif tag == "br" and self.cell is not None:
                 self.cell["text"].append(" ")
     def handle_data(self, data):
@@ -53,7 +56,7 @@ class TableParser(HTMLParser):
             return
         if tag in ("td", "th") and self.cell is not None:
             text = " ".join(" ".join(self.cell["text"]).split())[:1000]
-            self.row.append({"kind": self.cell["kind"], "text": text, "links": self.cell["links"][:10]})
+            self.row.append({"kind": self.cell["kind"], "text": text, "links": self.cell["links"][:10], "images": self.cell["images"][:20], "attributes": self.cell["attributes"]})
             self.cell = None
         elif tag == "tr" and self.row is not None:
             if self.row:
@@ -71,7 +74,7 @@ class TableParser(HTMLParser):
 
 def extract():
     result = {"generated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
-              "method": "Read-only HTML table extraction; text and links are unverified source evidence, not normalized game facts",
+              "method": "Read-only HTML table extraction; text, links, image metadata and cell attributes are unverified source evidence, not normalized game facts",
               "pages": {}}
     for name, path in PAGES.items():
         entry = {"url": BASE + path}
