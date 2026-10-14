@@ -64,4 +64,7 @@ for name, path in SOURCES.items():
         entry["error"] = type(error).__name__ + ": " + str(error)[:250]
     report["sources"][name] = entry
     print(f"{name}: {entry.get('http_status', 'error')} {entry.get('format', entry.get('error', ''))}")
+from discover_flatmmo_sources import discover
+report["reference_discovery"] = discover()
+print("Discovery: inspected", len(report["reference_discovery"]["pages"]), "pages and", len(report["reference_discovery"]["javascript"]), "JavaScript files")
 (OUT / "endpoint_inventory_v1.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
